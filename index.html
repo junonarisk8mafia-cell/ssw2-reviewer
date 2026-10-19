@@ -44,7 +44,7 @@ header{display:flex;flex-direction:column;gap:12px}
 .seg button{font:inherit;font-size:.85rem;border:0;background:none;color:var(--muted);padding:4px 12px;border-radius:999px;cursor:pointer}
 .seg button[aria-pressed="true"]{background:var(--accent);color:var(--surface);font-weight:700}
 .seg button:focus-visible,.opt:focus-visible,.btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-.progress{display:grid;grid-template-columns:repeat(10,1fr);gap:4px}
+.progress{display:grid;grid-template-columns:repeat(10,1fr);gap:3px}
 .progress i{height:6px;border-radius:3px;background:var(--line)}
 .progress i.ok{background:var(--accent)} .progress i.ng{background:var(--bad)} .progress i.now{background:var(--ink)}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:16px}
@@ -91,6 +91,23 @@ ruby rt{font-size:.5em;font-weight:500;color:var(--muted)}
 .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px}
 .facts div{border:1px solid var(--line);border-radius:10px;padding:8px 12px;background:var(--bg);font-size:.85rem;line-height:1.5}
 .facts b{display:block;font-family:var(--f-mono);font-size:1.05rem;font-variant-numeric:tabular-nums}
+.modes{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.mode{border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:var(--bg);display:flex;flex-direction:column;gap:8px}
+.mode .btn{align-self:flex-start}
+.mode p{margin:0;max-width:65ch}
+.mh{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap}
+.mt{font-weight:700}
+.num{font-family:var(--f-mono);font-variant-numeric:tabular-nums;font-size:.8rem;color:var(--muted)}
+.small{font-size:.82rem;color:var(--muted);margin:0}
+.timer{font-size:1rem;color:var(--ink);font-weight:500}
+.opt.sel{border-color:var(--ink);background:var(--accent-soft)}
+.progress i.done{background:var(--accent)}
+.btn[disabled]{opacity:.45;cursor:default}
+.btn.small{padding:6px 14px;font-size:.85rem;font-weight:500}
+.quit{border-top:1px solid var(--line);padding-top:12px;justify-content:flex-start}
+.badge{align-self:flex-start;font-weight:700;border-radius:999px;padding:4px 14px}
+.badge.pass{background:var(--accent-soft);color:var(--accent)}
+.badge.fail{background:var(--bad-soft);color:var(--bad)}
 footer{font-size:.78rem;color:var(--muted);display:flex;flex-direction:column;gap:4px}
 @media (prefers-reduced-motion:no-preference){.card{animation:in .25s ease-out}@keyframes in{from{transform:translateY(6px)}to{transform:none}}}
 </style>
@@ -121,110 +138,15 @@ footer{font-size:.78rem;color:var(--muted);display:flex;flex-direction:column;ga
   </footer>
 </div>
 
+<script src="/questions.js"></script>
 <script>
-const Q = [
- {cat:"職長の役割",
-  q:"{作業|さぎょう}{中|ちゅう}に、{!図面|ずめん}と{現場|げんば}が{違|ちが}うことに{気|き}づいた。{!職長|しょくちょう}として{最初|さいしょ}にすることはどれか。",
-  o:["{自分|じぶん}の{判断|はんだん}で{作業|さぎょう}を{続|つづ}ける","{作業|さぎょう}を{止|と}めて、{!元請|もとうけ}の{担当者|たんとうしゃ}に{報告|ほうこく}・{相談|そうだん}する","{作業|さぎょう}が{終|お}わってから{報告|ほうこく}する","{作業員|さぎょういん}に{判断|はんだん}を{任|まか}せる"], a:1,
-  tl:"Kapag hindi tugma ang drawing (図面) sa actual na site, huwag mong ituloy ang trabaho base sa sarili mong desisyon. I-stop muna, tapos i-report at i-consult agad sa person-in-charge ng main contractor (元請). Ito ang 報連相: report, inform, consult. Basic duty ito ng isang foreman.",
-  en:"If the drawing and the actual site don't match, stop the work and report to the main contractor's person in charge before deciding anything yourself. This is 報連相 (report, inform, consult), one of a foreman's basic duties.",
-  g:[["図面","ずめん","drawing"],["元請","もとうけ","main contractor"],["報連相","ほうれんそう","report, inform, consult"]]},
- {cat:"安全衛生",
-  q:"{!KY活動|ケーワイかつどう}の{目的|もくてき}として{正|ただ}しいものはどれか。",
-  o:["{作業|さぎょう}の{速|はや}さを{競|きそ}う","{作業|さぎょう}の{前|まえ}に{危険|きけん}を{予想|よそう}し、{対策|たいさく}を{話|はな}し{合|あ}う","{事故|じこ}の{後|あと}に{原因|げんいん}を{調|しら}べる","{作業員|さぎょういん}の{技能|ぎのう}を{評価|ひょうか}する"], a:1,
-  tl:"Ang KY ay 危険予知, ibig sabihin hazard prediction. Bago magsimula ang trabaho, pinag-uusapan ng team kung anong aksidente ang puwedeng mangyari at paano ito maiiwasan. Bago ang trabaho ito ginagawa, hindi pagkatapos ng aksidente.",
-  en:"KY stands for 危険予知 (hazard prediction). Before work starts, the team predicts what could go wrong and agrees on how to prevent it.",
-  g:[["危険予知","きけんよち","hazard prediction"],["対策","たいさく","countermeasure"]]},
- {cat:"安全衛生",
-  q:"「ヒヤリ・ハット」の{説明|せつめい}として{正|ただ}しいものはどれか。",
-  o:["{実際|じっさい}にけがをした{事故|じこ}","けがはなかったが、{事故|じこ}になりそうだった{出来事|できごと}","{機械|きかい}の{故障|こしょう}","{雨|あめ}の{日|ひ}の{作業|さぎょう}"], a:1,
-  tl:"Ito ang near miss: walang nasaktan, pero muntik nang maging aksidente. Mahalagang i-report ang mga near miss para maiwasan ang totoong aksidente sa susunod.",
-  en:"A near miss: nobody was hurt, but it almost became an accident. Reporting near misses helps stop the real accident before it happens.",
-  g:[["ヒヤリ・ハット","ひやり・はっと","near miss"],["出来事","できごと","incident"]]},
- {cat:"安全衛生",
-  q:"{!5S|ごエス}に{含|ふく}まれないものはどれか。",
-  o:["{整理|せいり}","{清掃|せいそう}","{速度|そくど}","しつけ"], a:2,
-  tl:"Ang 5S ay 整理 (sort), 整頓 (set in order), 清掃 (clean), 清潔 (keep clean), at しつけ (discipline). Wala ang speed dito. Ang goal ng 5S ay malinis at ligtas na workplace.",
-  en:"The 5S are 整理 (sort), 整頓 (set in order), 清掃 (clean), 清潔 (keep clean) and しつけ (discipline). Speed is not one of them.",
-  g:[["整理","せいり","sort"],["整頓","せいとん","set in order"],["清掃","せいそう","clean"]]},
- {cat:"安全衛生",
-  q:"リスクアセスメントで{最初|さいしょ}にすることはどれか。",
-  o:["リスクを{減|へ}らす{対策|たいさく}を{実施|じっし}する","{!危険性|きけんせい}・{!有害性|ゆうがいせい}を{特定|とくてい}する","{報告書|ほうこくしょ}を{提出|ていしゅつ}する","{保護具|ほごぐ}を{買|か}う"], a:1,
-  tl:"Una, i-identify muna ang mga hazard (危険性・有害性). Pagkatapos, i-estimate at i-evaluate ang risk. Saka pa lang magdedesisyon at gagawa ng countermeasure.",
-  en:"First identify the hazards. Then estimate and evaluate the risk, and only after that decide on and carry out the measures.",
-  g:[["危険性","きけんせい","danger, hazard"],["有害性","ゆうがいせい","harmfulness"],["特定","とくてい","identify"]]},
- {cat:"安全衛生",
-  q:"{安全|あんぜん}{対策|たいさく}で、もっとも{優先|ゆうせん}すべきものはどれか。",
-  o:["{保護具|ほごぐ}を{使|つか}う","{注意|ちゅうい}の{看板|かんばん}を{立|た}てる","{危険|きけん}そのものをなくす","{作業員|さぎょういん}に「{気|き}をつけて」と{言|い}う"], a:2,
-  tl:"Pinaka-priority ang tanggalin mismo ang panganib. Ito ang 本質安全 (inherent safety). Ang signboard, rules, at protective gear ay backup lang kapag hindi talaga matanggal ang hazard.",
-  en:"Removing the hazard itself (本質安全, inherent safety) comes first. Signs, rules and protective gear are backups for when the hazard cannot be removed.",
-  g:[["本質安全","ほんしつあんぜん","inherent safety"],["保護具","ほごぐ","protective equipment"],["優先","ゆうせん","priority"]]},
- {cat:"品質・工程・原価",
-  q:"{!QCDSE|キューシーディーエスイー}の「D」が{表|あらわ}すものはどれか。",
-  o:["{品質|ひんしつ}","{工期|こうき}（{納期|のうき}）","{原価|げんか}","{安全|あんぜん}"], a:1,
-  tl:"Q = quality (品質), C = cost (原価), D = delivery o schedule (工期), S = safety (安全), E = environment (環境). Kailangang i-balance ng foreman ang lima.",
-  en:"Q = quality, C = cost, D = delivery (the schedule or construction period), S = safety, E = environment. A foreman balances all five.",
-  g:[["工期","こうき","construction period"],["原価","げんか","cost"],["品質","ひんしつ","quality"]]},
- {cat:"品質・工程・原価",
-  q:"{!作業日報|さぎょうにっぽう}を{書|か}く{主|おも}な{目的|もくてき}はどれか。",
-  o:["{作業員|さぎょういん}の{給料|きゅうりょう}だけを{決|き}めるため","その{日|ひ}の{作業|さぎょう}の{内容|ないよう}・{人数|にんずう}・{進|すす}み{具合|ぐあい}を{記録|きろく}し、{!工程|こうてい}や{!原価|げんか}の{管理|かんり}に{使|つか}うため","{天気|てんき}だけを{記録|きろく}するため","{休|やす}みの{日|ひ}を{決|き}めるため"], a:1,
-  tl:"Sa daily report (作業日報), nire-record kung anong ginawa, ilang tao ang nagtrabaho, at gaano na kalayo ang progress. Ginagamit ito para i-manage ang schedule (工程) at cost (原価).",
-  en:"The daily report records what was done, how many people worked and how far the work progressed. That record is used to manage the schedule and cost.",
-  g:[["作業日報","さぎょうにっぽう","daily work report"],["工程","こうてい","schedule, process"],["管理","かんり","management"]]},
- {cat:"職長の役割",
-  q:"{!職長|しょくちょう}の{行動|こうどう}で、パワーハラスメントになるおそれがあるものはどれか。",
-  o:["{危|あぶ}ない{作業|さぎょう}を{見|み}て、すぐに{止|と}める","ミスをした{作業員|さぎょういん}を、みんなの{前|まえ}で{長|なが}い{時間|じかん}どなる","{作業|さぎょう}{手順|てじゅん}をていねいに{説明|せつめい}する","{休憩|きゅうけい}をとるように{言|い}う"], a:1,
-  tl:"Trabaho ng foreman na pahintuin ang delikadong trabaho. Pero ang sigawan nang matagal ang isang worker sa harap ng lahat ay pag-atake na sa tao, hindi sa problema. Puwede itong maging power harassment.",
-  en:"Stopping dangerous work is part of the job. Yelling at someone for a long time in front of everyone attacks the person, not the problem, and can count as power harassment.",
-  g:[["手順","てじゅん","procedure"],["休憩","きゅうけい","break"]]},
- {cat:"安全衛生",
-  q:"{高|たか}い{所|ところ}で{作業|さぎょう}するとき、{!墜落|ついらく}を{防|ふせ}ぐために{使|つか}うものはどれか。",
-  o:["{耳栓|みみせん}","{!墜落制止用器具|ついらくせいしようきぐ}","{防|ぼう}じんマスク","{安全靴|あんぜんぐつ}"], a:1,
-  tl:"Ang 墜落制止用器具 (fall-arrest harness) ang pumipigil sa pagkahulog mula sa mataas na lugar. Dati itong tinatawag na 安全帯 (safety belt), kaya maririnig mo pa rin ito sa site.",
-  en:"A fall-arrest harness (墜落制止用器具) stops a fall from height. It used to be called 安全帯 (safety belt), and you may still hear that word on site.",
-  g:[["墜落","ついらく","fall from height"],["墜落制止用器具","ついらくせいしようきぐ","fall-arrest harness"],["安全帯","あんぜんたい","safety belt (old term)"]]}
-];
-
-const TR = [
- {q:{en:"While working, you notice that the drawing and the actual site are different. As foreman, what do you do first?",
-     tl:"Habang nagtatrabaho, napansin mong magkaiba ang drawing at ang actual na site. Bilang foreman, ano ang una mong gagawin?"},
-  o:{en:["Keep working based on your own judgment","Stop the work and report to / consult the main contractor's person in charge","Report after the work is finished","Let the workers decide"],
-     tl:["Ituloy ang trabaho base sa sarili mong desisyon","I-stop ang trabaho, tapos mag-report at mag-consult sa person-in-charge ng main contractor","Mag-report pagkatapos matapos ang trabaho","Hayaan ang mga worker ang magdesisyon"]}},
- {q:{en:"Which is the correct purpose of KY activity?", tl:"Alin ang tamang purpose ng KY activity?"},
-  o:{en:["To compete on work speed","To predict dangers before work and discuss countermeasures","To investigate the cause after an accident","To evaluate workers' skills"],
-     tl:["Para magpabilisan sa trabaho","Para hulaan ang panganib bago ang trabaho at pag-usapan ang countermeasure","Para alamin ang dahilan pagkatapos ng aksidente","Para i-evaluate ang skill ng mga worker"]}},
- {q:{en:"Which correctly describes a \"hiyari-hatto\"?", tl:"Alin ang tamang paliwanag ng \"hiyari-hatto\"?"},
-  o:{en:["An accident where someone was actually hurt","Nobody was hurt, but it almost became an accident","A machine breakdown","Working on a rainy day"],
-     tl:["Aksidente na may talagang nasaktan","Walang nasaktan, pero muntik nang maging aksidente","Pagkasira ng makina","Trabaho sa araw na umuulan"]}},
- {q:{en:"Which is NOT part of 5S?", tl:"Alin ang HINDI kasama sa 5S?"},
-  o:{en:["Sort (seiri)","Clean (seisō)","Speed (sokudo)","Discipline (shitsuke)"],
-     tl:["Sort (seiri)","Clean (seisō)","Speed (sokudo)","Discipline (shitsuke)"]}},
- {q:{en:"In a risk assessment, what do you do first?", tl:"Sa risk assessment, ano ang unang gagawin?"},
-  o:{en:["Carry out measures to reduce the risk","Identify the hazards and harmful factors","Submit a report","Buy protective equipment"],
-     tl:["Gawin ang countermeasure para bawasan ang risk","I-identify ang mga hazard at harmful factor","Mag-submit ng report","Bumili ng protective equipment"]}},
- {q:{en:"Which safety measure should have the highest priority?", tl:"Aling safety measure ang dapat pinaka-priority?"},
-  o:{en:["Use protective equipment","Put up a warning sign","Remove the danger itself","Tell the workers \"be careful\""],
-     tl:["Gumamit ng protective equipment","Maglagay ng warning signboard","Tanggalin mismo ang panganib","Sabihan ang mga worker na \"mag-ingat kayo\""]}},
- {q:{en:"What does the \"D\" in QCDSE stand for?", tl:"Ano ang ibig sabihin ng \"D\" sa QCDSE?"},
-  o:{en:["Quality","Construction period (delivery)","Cost","Safety"],
-     tl:["Quality","Construction period (delivery)","Cost","Safety"]}},
- {q:{en:"What is the main purpose of writing a daily work report?", tl:"Ano ang main purpose ng pagsulat ng daily work report?"},
-  o:{en:["Only to decide the workers' pay","To record the day's work, number of people and progress, and use it to manage the schedule and cost","Only to record the weather","To decide days off"],
-     tl:["Para lang i-decide ang sahod ng mga worker","Para i-record ang trabaho, ilang tao, at progress ngayong araw, at gamitin sa pag-manage ng schedule at cost","Para lang i-record ang weather","Para i-decide ang day off"]}},
- {q:{en:"Which foreman behavior could become power harassment?", tl:"Aling gawain ng foreman ang puwedeng maging power harassment?"},
-  o:{en:["Stopping dangerous work right away","Yelling for a long time at a worker who made a mistake, in front of everyone","Explaining work procedures carefully","Telling workers to take a break"],
-     tl:["Agad pinapahinto ang delikadong trabaho","Sinisigawan nang matagal ang worker na nagkamali, sa harap ng lahat","Maingat na ipinapaliwanag ang work procedure","Sinasabihang mag-break muna"]}},
- {q:{en:"When working at height, what do you use to prevent falls?", tl:"Kapag nagtatrabaho sa mataas na lugar, ano ang ginagamit para hindi mahulog?"},
-  o:{en:["Earplugs","Fall-arrest harness","Dust mask","Safety shoes"],
-     tl:["Earplugs","Fall-arrest harness","Dust mask","Safety shoes"]}}
-];
-
-const store ={get(k,d){try{const v=localStorage.getItem(k);return v===null?d:JSON.parse(v)}catch(e){return d}},
+const store = {get(k,d){try{const v=localStorage.getItem(k);return v===null?d:JSON.parse(v)}catch(e){return d}},
                set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
-const S = {ruby:store.get("k2.ruby",0), lang:store.get("k2.lang","tl"), order:[], i:0, res:[], picked:null, best:store.get("k2.best",null), tr:false, trUsed:new Set()};
 const LV = ["ぜんぶ","むずかしい語だけ","なし（本番）"];
-
-
+const PRACTICE_N = 10, MIN_PER_Q = 1.5, PASS = 0.75;
+const S = {ruby:store.get("k2.ruby",0), lang:store.get("k2.lang","tl"), mode:"home", set:[], i:0, res:[], picked:null,
+           tr:false, trUsed:new Set(), t0:0, used:0, limit:0, timer:null,
+           best:store.get("k2.best2",{practice:null, mock:null})};
 const ABOUT = {
  tl:{s:"What is SSW2? Ano ang exam na ito?",
   p:"Kung nasa Tokutei Ginou 1-gō (SSW i) ka ngayon, 5 years lang total ang stay mo at hindi mo maisasama ang pamilya mo. Kapag pumasa ka sa 2-gō (SSW ii):",
@@ -248,6 +170,7 @@ function renderAbout(){
   el.open=open;
 }
 document.getElementById("about").addEventListener("toggle",e=>{ if(!e.target.open) store.set("k2.aboutSeen",true) });
+
 function rb(s){
   return s.replace(/\{(!?)([^|}]+)\|([^}]*)\}/g,(m,hard,base,read)=>{
     const show = read && (S.ruby===0 || (S.ruby===1 && hard));
@@ -255,61 +178,139 @@ function rb(s){
   });
 }
 function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
-function start(){
-  S.order = Q.map((q,qi)=>({qi, opts:shuffle(q.o.map((t,oi)=>oi))}));
-  S.i=0; S.res=[]; S.picked=null; S.tr=false; S.trUsed=new Set(); render();
+function pick(n){ return shuffle(BANK.map((_,i)=>i)).slice(0,n).map(qi=>({qi, opts:shuffle([0,1,2,3])})); }
+function reset(){ S.i=0; S.res=[]; S.picked=null; S.tr=false; S.trUsed=new Set(); clearInterval(S.timer); }
+function startPractice(){ reset(); S.mode="practice"; S.set=pick(PRACTICE_N); render(); }
+function startMock(){
+  reset(); S.mode="mock"; S.set=pick(BANK.length);
+  S.limit=Math.round(BANK.length*MIN_PER_Q)*60; S.t0=Date.now(); S.used=0;
+  S.timer=setInterval(()=>{
+    const left=S.limit-Math.floor((Date.now()-S.t0)/1000);
+    const el=document.getElementById("timer"); if(el) el.textContent=fmt(Math.max(0,left));
+    if(left<=0){ finishMock(); }
+  },1000);
+  render();
 }
+function finishMock(){ clearInterval(S.timer); S.used=Math.min(S.limit,Math.floor((Date.now()-S.t0)/1000)); S.i=S.set.length; render(); }
+function goHome(){ reset(); S.mode="home"; render(); window.scrollTo(0,0); }
+function fmt(sec){ return `${Math.floor(sec/60)}:${String(sec%60).padStart(2,"0")}`; }
 function seg(id,val){document.querySelectorAll(`#${id} button`).forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.v===String(val))))}
 function progress(){
   const p=document.getElementById("progress");
-  p.innerHTML=Q.map((_,k)=>{const r=S.res[k];return `<i class="${r===true?"ok":r===false?"ng":k===S.i&&S.i<Q.length?"now":""}"></i>`}).join("");
+  if(S.mode==="home"){ p.hidden=true; return; }
+  p.hidden=false; p.style.gridTemplateColumns=`repeat(${S.set.length},1fr)`;
+  p.innerHTML=S.set.map((_,k)=>{const r=S.res[k];
+    const cls = S.mode==="mock" ? (r!==undefined?"done":k===S.i&&S.i<S.set.length?"now":"")
+                                : (r===true?"ok":r===false?"ng":k===S.i&&S.i<S.set.length?"now":"");
+    return `<i class="${cls}"></i>`}).join("");
 }
+const T = {
+  tl:{prTitle:"Practice", prDesc:`${PRACTICE_N} random na tanong. May sagot at paliwanag pagkatapos ng bawat tanong.`,
+      mkTitle:"Mock exam", mkDesc:`Lahat ng ${BANK.length} tanong, ${Math.round(BANK.length*MIN_PER_Q)} minuto. Walang paliwanag hanggang matapos. Pasado kapag 75% pataas (${Math.ceil(BANK.length*PASS)}/${BANK.length}).`,
+      real:"Ang totoong exam ay 40 tanong / 60 minuto. Pareho ang bilis: 1.5 minuto bawat tanong.",
+      bank:`${BANK.length} tanong sa ngayon. Madadagdagan pa.`, best:"Best", start:"Simulan", home:"Home", next:"Susunod", finish:"Tapusin"},
+  en:{prTitle:"Practice", prDesc:`${PRACTICE_N} random questions. You see the answer and explanation after each one.`,
+      mkTitle:"Mock exam", mkDesc:`All ${BANK.length} questions in ${Math.round(BANK.length*MIN_PER_Q)} minutes. No explanations until the end. Pass at 75% or more (${Math.ceil(BANK.length*PASS)}/${BANK.length}).`,
+      real:"The real exam is 40 questions in 60 minutes. Same pace: 1.5 minutes per question.",
+      bank:`${BANK.length} questions so far. More are coming.`, best:"Best", start:"Start", home:"Home", next:"Next", finish:"Finish"}
+};
 function render(){
-  seg("rubySeg",S.ruby); seg("langSeg",S.lang); progress(); renderAbout();
-  const m=document.getElementById("main");
-  if(S.i>=Q.length){ m.innerHTML=result(); bindResult(); return; }
-  const it=S.order[S.i], q=Q[it.qi], t=TR[it.qi], answered=S.picked!==null;
+  seg("rubySeg",S.ruby); seg("langSeg",S.lang); renderAbout(); progress();
+  const m=document.getElementById("main"), t=T[S.lang];
+  if(S.mode==="home"){
+    const bp=S.best.practice, bm=S.best.mock;
+    m.innerHTML=`<section class="card"><div class="modes">
+      <div class="mode"><div class="mh"><span class="mt">練習モード · ${t.prTitle}</span>${bp!==null?`<span class="num">${t.best} ${bp}/${PRACTICE_N}</span>`:""}</div>
+        <p>${t.prDesc}</p><button type="button" class="btn" id="goPractice">${t.start}</button></div>
+      <div class="mode"><div class="mh"><span class="mt">模擬試験 · ${t.mkTitle}</span>${bm!==null?`<span class="num">${t.best} ${bm}/${BANK.length}</span>`:""}</div>
+        <p>${t.mkDesc}</p><p class="small">${t.real}</p><button type="button" class="btn" id="goMock">${t.start}</button></div>
+      </div><p class="small">${t.bank}</p></section>`;
+    document.getElementById("goPractice").addEventListener("click",startPractice);
+    document.getElementById("goMock").addEventListener("click",startMock);
+    return;
+  }
+  if(S.i>=S.set.length){ m.innerHTML = S.mode==="mock" ? mockResult() : practiceResult(); bindResult(); return; }
+  const it=S.set[S.i], q=BANK[it.qi], answered=S.picked!==null, mock=S.mode==="mock";
   const opts=it.opts.map((oi,pos)=>{
-    let cls="opt"; if(answered){ if(oi===q.a) cls+=" right"; else if(oi===S.picked) cls+=" wrong"; }
-    const sub = S.tr ? `<span class="t">${t.o[S.lang][oi]}</span>` : "";
-    return `<button type="button" class="${cls}" data-oi="${oi}" ${answered?"disabled":""}><span class="k">${"ABCD"[pos]}</span><span class="ot"><span>${rb(q.o[oi])}</span>${sub}</span></button>`;
+    let cls="opt";
+    if(mock){ if(oi===S.picked) cls+=" sel"; }
+    else if(answered){ if(oi===q.a) cls+=" right"; else if(oi===S.picked) cls+=" wrong"; }
+    const sub = (!mock && S.tr) ? `<span class="t">${q.to[S.lang][oi]}</span>` : "";
+    return `<button type="button" class="${cls}" data-oi="${oi}" ${(!mock&&answered)?"disabled":""}><span class="k">${"ABCD"[pos]}</span><span class="ot"><span>${rb(q.o[oi])}</span>${sub}</span></button>`;
   }).join("");
-  const trLabel = S.tr ? (S.lang==="tl"?"Itago ang translation · 訳を隠す":"Hide translation · 訳を隠す") : (S.lang==="tl"?"Tingnan ang translation · 訳を見る":"Show translation · 訳を見る");
-  const trBlock = `<div class="trbox"><button type="button" class="trbtn" id="trBtn" aria-expanded="${S.tr}">${trLabel}</button>${S.tr?`<p class="tq">${t.q[S.lang]}</p>`:""}</div>`;
-  let ex="";
-  if(answered){
+  let trBlock="";
+  if(!mock){
+    const trLabel = S.tr ? (S.lang==="tl"?"Itago ang translation · 訳を隠す":"Hide translation · 訳を隠す") : (S.lang==="tl"?"Tingnan ang translation · 訳を見る":"Show translation · 訳を見る");
+    trBlock = `<div class="trbox"><button type="button" class="trbtn" id="trBtn" aria-expanded="${S.tr}">${trLabel}</button>${S.tr?`<p class="tq">${q.tq[S.lang]}</p>`:""}</div>`;
+  }
+  let foot="";
+  if(mock){
+    const last=S.i===S.set.length-1;
+    foot=`<div class="row"><button type="button" class="btn" id="next" ${answered?"":"disabled"}>${last?t.finish:t.next}</button></div>`;
+  } else if(answered){
     const ok=S.picked===q.a;
     const v = S.lang==="tl" ? (ok?"Tama! 正解":"Mali. 不正解") : (ok?"Correct! 正解":"Not quite. 不正解");
-    ex=`<div class="explain"><div class="verdict ${ok?"ok":"ng"}">${v}</div><p>${q[S.lang]}</p>
+    foot=`<div class="explain"><div class="verdict ${ok?"ok":"ng"}">${v}</div><p>${q[S.lang]}</p>
       <div class="gloss">${q.g.map(([w,r,e])=>`<span><b>${w}</b> <em>${r}</em> · ${e}</span>`).join("")}</div>
-      <div class="row"><button type="button" class="btn" id="next">${S.i===Q.length-1?"結果を見る":"次の問題"}</button></div></div>`;
+      <div class="row"><button type="button" class="btn" id="next">${S.i===S.set.length-1?"結果を見る":"次の問題"}</button></div></div>`;
   }
-  m.innerHTML=`<section class="card" aria-live="polite"><div class="meta"><span class="chip">${q.cat}</span><span class="num">第${S.i+1}問 / ${Q.length}</span></div>
-    <p class="q">${rb(q.q)}</p>${trBlock}<div class="opts">${opts}</div>${ex}</section>`;
-  document.getElementById("trBtn").addEventListener("click",()=>{S.tr=!S.tr; if(S.tr) S.trUsed.add(S.i); render(); document.getElementById("trBtn")?.focus()});
-  m.querySelectorAll(".opt").forEach(b=>b.addEventListener("click",()=>{S.picked=+b.dataset.oi;S.res[S.i]=(S.picked===q.a);render();document.getElementById("next")?.focus()}));
-  document.getElementById("next")?.addEventListener("click",()=>{S.i++;S.picked=null;S.tr=false;render()});
+  const left = mock ? fmt(Math.max(0,S.limit-Math.floor((Date.now()-S.t0)/1000))) : "";
+  m.innerHTML=`<section class="card" aria-live="polite"><div class="meta"><span class="chip">${q.cat}</span>
+    ${mock?`<span class="num timer" id="timer" aria-label="time left">${left}</span>`:""}
+    <span class="num">第${S.i+1}問 / ${S.set.length}</span></div>
+    <p class="q">${rb(q.q)}</p>${trBlock}<div class="opts">${opts}</div>${foot}
+    <div class="row quit"><button type="button" class="btn ghost small" id="quit">${t.home}</button></div></section>`;
+  m.querySelectorAll(".opt").forEach(b=>b.addEventListener("click",()=>{
+    S.picked=+b.dataset.oi; S.res[S.i]=(S.picked===q.a); render();
+    if(!mock) document.getElementById("next")?.focus();
+  }));
+  document.getElementById("trBtn")?.addEventListener("click",()=>{S.tr=!S.tr; if(S.tr) S.trUsed.add(S.i); render(); document.getElementById("trBtn")?.focus()});
+  document.getElementById("next")?.addEventListener("click",()=>{
+    if(mock && S.i===S.set.length-1){ finishMock(); return; }
+    S.i++; S.picked=null; S.tr=false; render(); window.scrollTo(0,0);
+  });
+  document.getElementById("quit").addEventListener("click",goHome);
 }
-function result(){
-  const n=S.res.filter(Boolean).length;
-  if(S.best===null||n>S.best){S.best=n;store.set("k2.best",n)}
-  const wrong=S.order.map((it,k)=>({q:Q[it.qi],ok:S.res[k]})).filter(x=>!x.ok);
-  const up = n>=8 && S.ruby<2;
+function saveBest(key,n){ if(S.best[key]===null||n>S.best[key]){ S.best[key]=n; store.set("k2.best2",S.best); } }
+function wrongList(){
+  return S.set.map((it,k)=>({q:BANK[it.qi],ok:S.res[k]})).filter(x=>x.ok!==true);
+}
+function practiceResult(){
+  const n=S.res.filter(Boolean).length; saveBest("practice",n);
+  const wrong=wrongList(), up = n>=8 && S.ruby<2;
   const tip = up ? `<div class="hint">${n}問正解。ふりがなを「${LV[S.ruby+1]}」にして、もう一度ためしてみよう。本番はふりがながほとんどありません。</div>`
-                 : (n>=8 ? `<div class="hint">ふりがななしで${n}問正解。本番と同じ条件でできています。</div>` : "");
-  return `<section class="card"><div class="meta"><span class="chip">結果</span><span class="num">ふりがな：${LV[S.ruby]}</span></div>
-    <p class="score">${n}<small> / ${Q.length} 問正解　（これまでの最高 ${S.best}）</small></p>${tip}
-    <div class="hint">訳を見た問題：${S.trUsed.size}問 / ${Q.length}問。${S.trUsed.size===0?"訳なしで全部読めています。":"本番の試験には訳がありません。次は訳を見る回数を1問でも減らしてみよう。"}</div>
+                 : (n>=8 ? `<div class="hint">ふりがななしで${n}問正解。次は模擬試験に挑戦しよう。</div>` : "");
+  return `<section class="card"><div class="meta"><span class="chip">練習モードの結果</span><span class="num">ふりがな：${LV[S.ruby]}</span></div>
+    <p class="score">${n}<small> / ${S.set.length} 問正解　（これまでの最高 ${S.best.practice}）</small></p>${tip}
+    <div class="hint">訳を見た問題：${S.trUsed.size}問 / ${S.set.length}問。${S.trUsed.size===0?"訳なしで全部読めています。":"本番の試験には訳がありません。次は訳を見る回数を1問でも減らしてみよう。"}</div>
     ${wrong.length?`<div><div class="verdict ng" style="margin-bottom:8px">まちがえた問題</div><ul class="review">${wrong.map(x=>`<li>${rb(x.q.q)}<div class="ans">正解：${rb(x.q.o[x.q.a])}</div></li>`).join("")}</ul></div>`:""}
-    <div class="row">${up?`<button type="button" class="btn ghost" id="again">同じ設定でもう一度</button><button type="button" class="btn" id="levelup">ふりがなを減らして挑戦</button>`:`<button type="button" class="btn" id="again">もう一度</button>`}</div></section>`;
+    <div class="row"><button type="button" class="btn ghost" id="toHome">${T[S.lang].home}</button>${up?`<button type="button" class="btn ghost" id="again">同じ設定でもう一度</button><button type="button" class="btn" id="levelup">ふりがなを減らして挑戦</button>`:`<button type="button" class="btn" id="again">もう一度</button>`}</div></section>`;
+}
+function mockResult(){
+  const total=S.set.length, n=S.res.filter(Boolean).length, need=Math.ceil(total*PASS), pass=n>=need;
+  saveBest("mock",n);
+  const pct=Math.round(n/total*100), unanswered=total-S.res.filter(r=>r!==undefined).length;
+  const wrong=wrongList();
+  const msg = S.lang==="tl"
+    ? (pass?"Pasado! Kaya mo na ang 75% na passing line. Subukan sa \"なし（本番）\" na furigana kung hindi mo pa nagagawa.":`Kulang pa ng ${need-n} tanong para pumasa. Balikan ang mga mali sa ibaba, tapos subukan ulit.`)
+    : (pass?"Passed! You cleared the 75% line. Try again with furigana set to \"なし（本番）\" if you haven't yet.":`${need-n} more correct answers needed to pass. Review the mistakes below and try again.`);
+  return `<section class="card"><div class="meta"><span class="chip">模擬試験の結果</span><span class="num">ふりがな：${LV[S.ruby]}</span></div>
+    <div class="badge ${pass?"pass":"fail"}">${pass?"合格 · PASS":"不合格 · NOT YET"}</div>
+    <p class="score">${n}<small> / ${total} 問正解（${pct}%）　合格ライン ${need}問</small></p>
+    <div class="facts"><div><b>${fmt(S.used)}</b>使った時間 / ${fmt(S.limit)}</div><div><b>${unanswered}</b>未回答</div><div><b>${S.best.mock}</b>これまでの最高</div></div>
+    <div class="hint">${msg}</div>
+    ${wrong.length?`<div><div class="verdict ng" style="margin-bottom:8px">まちがえた問題と解説</div><ul class="review">${wrong.map(x=>`<li>${rb(x.q.q)}<div class="ans">正解：${rb(x.q.o[x.q.a])}</div><p class="small" style="margin:6px 0 0">${x.q[S.lang]}</p></li>`).join("")}</ul></div>`:""}
+    <div class="row"><button type="button" class="btn ghost" id="toHome">${T[S.lang].home}</button><button type="button" class="btn" id="againMock">もう一度</button></div></section>`;
 }
 function bindResult(){
-  document.getElementById("again")?.addEventListener("click",start);
-  document.getElementById("levelup")?.addEventListener("click",()=>{S.ruby=Math.min(2,S.ruby+1);store.set("k2.ruby",S.ruby);start()});
+  document.getElementById("toHome")?.addEventListener("click",goHome);
+  document.getElementById("again")?.addEventListener("click",startPractice);
+  document.getElementById("againMock")?.addEventListener("click",startMock);
+  document.getElementById("levelup")?.addEventListener("click",()=>{S.ruby=Math.min(2,S.ruby+1);store.set("k2.ruby",S.ruby);startPractice()});
 }
 document.getElementById("rubySeg").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;S.ruby=+b.dataset.v;store.set("k2.ruby",S.ruby);render()});
 document.getElementById("langSeg").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;S.lang=b.dataset.v;store.set("k2.lang",S.lang);render()});
-start();
+render();
 if("serviceWorker" in navigator){ window.addEventListener("load",()=>navigator.serviceWorker.register("/sw.js").catch(()=>{})); }
 </script>
 </body>
