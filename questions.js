@@ -1,5 +1,6 @@
-// SSW2 REVIEWER question bank (construction, written test). All questions are original.
+// SSW2 REVIEWER question bank (construction). All questions are original.
 // Ruby markup: {base|reading} shows furigana at level 0; {!base|reading} also at level 1 (hard words).
+// lv: basic | real (exam level). part: gakka (written) | jitsugi (practical, with kubun).
 const BANK = [
  {
   "cat": "職長の役割",
@@ -47,7 +48,9 @@ const BANK = [
     "Mag-report pagkatapos matapos ang trabaho",
     "Hayaan ang mga worker ang magdesisyon"
    ]
-  }
+  },
+  "lv": "basic",
+  "part": "gakka"
  },
  {
   "cat": "安全衛生",
@@ -90,7 +93,9 @@ const BANK = [
     "Para alamin ang dahilan pagkatapos ng aksidente",
     "Para i-evaluate ang skill ng mga worker"
    ]
-  }
+  },
+  "lv": "basic",
+  "part": "gakka"
  },
  {
   "cat": "安全衛生",
@@ -133,7 +138,9 @@ const BANK = [
     "Pagkasira ng makina",
     "Trabaho sa araw na umuulan"
    ]
-  }
+  },
+  "lv": "basic",
+  "part": "gakka"
  },
  {
   "cat": "安全衛生",
@@ -181,7 +188,9 @@ const BANK = [
     "Speed (sokudo)",
     "Discipline (shitsuke)"
    ]
-  }
+  },
+  "lv": "basic",
+  "part": "gakka"
  },
  {
   "cat": "安全衛生",
@@ -229,7 +238,9 @@ const BANK = [
     "Mag-submit ng report",
     "Bumili ng protective equipment"
    ]
-  }
+  },
+  "lv": "basic",
+  "part": "gakka"
  },
  {
   "cat": "安全衛生",
@@ -277,7 +288,9 @@ const BANK = [
     "Tanggalin mismo ang panganib",
     "Sabihan ang mga worker na \"mag-ingat kayo\""
    ]
-  }
+  },
+  "lv": "basic",
+  "part": "gakka"
  },
  {
   "cat": "品質・工程・原価",
@@ -325,7 +338,9 @@ const BANK = [
     "Cost",
     "Safety"
    ]
-  }
+  },
+  "lv": "basic",
+  "part": "gakka"
  },
  {
   "cat": "品質・工程・原価",
@@ -373,7 +388,9 @@ const BANK = [
     "Para lang i-record ang weather",
     "Para i-decide ang day off"
    ]
-  }
+  },
+  "lv": "basic",
+  "part": "gakka"
  },
  {
   "cat": "職長の役割",
@@ -416,7 +433,9 @@ const BANK = [
     "Maingat na ipinapaliwanag ang work procedure",
     "Sinasabihang mag-break muna"
    ]
-  }
+  },
+  "lv": "basic",
+  "part": "gakka"
  },
  {
   "cat": "安全衛生",
@@ -464,7 +483,9 @@ const BANK = [
     "Dust mask",
     "Safety shoes"
    ]
-  }
+  },
+  "lv": "basic",
+  "part": "gakka"
  },
  {
   "cat": "職長の役割",
@@ -507,7 +528,9 @@ const BANK = [
     "Foreman lang ang kailangang makaintindi",
     "Huwag nang baguhin kapag nagawa na"
    ]
-  }
+  },
+  "lv": "basic",
+  "part": "gakka"
  },
  {
   "cat": "職長の役割",
@@ -550,7 +573,9 @@ const BANK = [
     "Ibigay sa bagong worker ang pinakamahirap na trabaho",
     "Kahit sino puwede, kahit walang license"
    ]
-  }
+  },
+  "lv": "basic",
+  "part": "gakka"
  },
  {
   "cat": "安全衛生",
@@ -593,7 +618,9 @@ const BANK = [
     "Permiso lang ng foreman",
     "Rekomendasyon ng katrabaho"
    ]
-  }
+  },
+  "lv": "basic",
+  "part": "gakka"
  },
  {
   "cat": "安全衛生",
@@ -636,7 +663,9 @@ const BANK = [
     "Presyo at dami ng materyales",
     "Panahon at temperatura"
    ]
-  }
+  },
+  "lv": "basic",
+  "part": "gakka"
  },
  {
   "cat": "安全衛生",
@@ -679,7 +708,9 @@ const BANK = [
     "Lalaktawan ang check",
     "Magdedesisyon nang mag-isa"
    ]
-  }
+  },
+  "lv": "basic",
+  "part": "gakka"
  },
  {
   "cat": "安全衛生",
@@ -727,7 +758,9 @@ const BANK = [
     "Schedule chart",
     "Completion inspection"
    ]
-  }
+  },
+  "lv": "basic",
+  "part": "gakka"
  },
  {
   "cat": "安全衛生",
@@ -770,7 +803,9 @@ const BANK = [
     "Ituloy lang ang trabaho",
     "Mag-picture muna bago mag-isip"
    ]
-  }
+  },
+  "lv": "basic",
+  "part": "gakka"
  },
  {
   "cat": "安全衛生",
@@ -818,7 +853,9 @@ const BANK = [
     "Health management",
     "Inventory management"
    ]
-  }
+  },
+  "lv": "basic",
+  "part": "gakka"
  },
  {
   "cat": "安全衛生",
@@ -866,7 +903,9 @@ const BANK = [
     "Huwag magpahinga kahit mainit, tapusin agad",
     "Huwag magsalita kahit masama ang pakiramdam"
    ]
-  }
+  },
+  "lv": "basic",
+  "part": "gakka"
  },
  {
   "cat": "安全衛生",
@@ -909,7 +948,9 @@ const BANK = [
     "Puwedeng tanggalin kapag mainit",
     "Isuot nang pabaliktad"
    ]
-  }
+  },
+  "lv": "basic",
+  "part": "gakka"
  },
  {
   "cat": "安全衛生",
@@ -957,7 +998,9 @@ const BANK = [
     "Ilagay ang sign pagkatapos ng trabaho",
     "Huwag sabihin kahit kanino ang delikadong lugar"
    ]
-  }
+  },
+  "lv": "basic",
+  "part": "gakka"
  },
  {
   "cat": "品質・工程・原価",
@@ -1005,7 +1048,9 @@ const BANK = [
     "Check → Act → Plan → Do",
     "Act → Check → Do → Plan"
    ]
-  }
+  },
+  "lv": "basic",
+  "part": "gakka"
  },
  {
   "cat": "品質・工程・原価",
@@ -1053,7 +1098,9 @@ const BANK = [
     "Walang magbabago",
     "Siguradong lalaki ang kita"
    ]
-  }
+  },
+  "lv": "basic",
+  "part": "gakka"
  },
  {
   "cat": "品質・工程・原価",
@@ -1096,7 +1143,9 @@ const BANK = [
     "Laktawan ang safety check at magmadali",
     "Maghintay lang nang walang ginagawa"
    ]
-  }
+  },
+  "lv": "basic",
+  "part": "gakka"
  },
  {
   "cat": "品質・工程・原価",
@@ -1139,7 +1188,9 @@ const BANK = [
     "Meeting bago ang trabaho",
     "Pag-check ng mga gamit"
    ]
-  }
+  },
+  "lv": "basic",
+  "part": "gakka"
  },
  {
   "cat": "環境",
@@ -1187,7 +1238,9 @@ const BANK = [
     "Iwan ang basura sa kalsada",
     "Huwag pakinggan ang mga kapitbahay"
    ]
-  }
+  },
+  "lv": "basic",
+  "part": "gakka"
  },
  {
   "cat": "図面・建設業",
@@ -1230,7 +1283,9 @@ const BANK = [
     "Advertisement ng kumpanya",
     "Weather forecast"
    ]
-  }
+  },
+  "lv": "basic",
+  "part": "gakka"
  },
  {
   "cat": "図面・建設業",
@@ -1278,7 +1333,9 @@ const BANK = [
     "Dito nakatakda ang day off ng mga worker",
     "Ginagamit ito sa advertisement"
    ]
-  }
+  },
+  "lv": "basic",
+  "part": "gakka"
  },
  {
   "cat": "図面・建設業",
@@ -1321,7 +1378,9 @@ const BANK = [
     "Gawing pare-pareho ang sahod sa buong bansa",
     "Magdesisyon sa design ng building"
    ]
-  }
+  },
+  "lv": "basic",
+  "part": "gakka"
  },
  {
   "cat": "図面・建設業",
@@ -1369,6 +1428,1651 @@ const BANK = [
     "Sub-subcontractor (magouke)",
     "Dispatch worker (haken)"
    ]
-  }
+  },
+  "lv": "basic",
+  "part": "gakka"
+ },
+ {
+  "cat": "法令・役割",
+  "q": "{建設業者|けんせつぎょうしゃ}が、{請|う}け{負|お}ったすべての{工事現場|こうじげんば}に{置|お}かなければならない{技術者|ぎじゅつしゃ}はどれか。",
+  "o": [
+   "{!主任技術者|しゅにんぎじゅつしゃ}",
+   "{安全衛生推進者|あんぜんえいせいすいしんしゃ}",
+   "{職長|しょくちょう}",
+   "{現場代理人|げんばだいりにん}"
+  ],
+  "a": 0,
+  "tl": "Ayon sa 建設業法, lahat ng construction company ay dapat maglagay ng 主任技術者 (chief engineer) sa bawat site na kinuha nila, para siguraduhin ang technical na kalidad ng trabaho. Hindi ito pareho ng 職長 (foreman) na nag-aasikaso ng mga worker.",
+  "en": "Under the Construction Business Act, a construction company must place a chief engineer (主任技術者) at every site it contracts, to manage the technical quality of the work. This is different from the foreman (職長), who leads the workers.",
+  "g": [
+   [
+    "主任技術者",
+    "しゅにんぎじゅつしゃ",
+    "chief engineer"
+   ],
+   [
+    "技術者",
+    "ぎじゅつしゃ",
+    "engineer"
+   ]
+  ],
+  "tq": {
+   "en": "Which engineer must a construction company place at every site it contracts?",
+   "tl": "Aling engineer ang dapat ilagay ng construction company sa bawat site na kinuha nila?"
+  },
+  "to": {
+   "en": [
+    "Chief engineer (shunin gijutsusha)",
+    "Health and safety promoter",
+    "Foreman (shokuchō)",
+    "Site agent (genba dairinin)"
+   ],
+   "tl": [
+    "Chief engineer (shunin gijutsusha)",
+    "Health and safety promoter",
+    "Foreman (shokuchō)",
+    "Site agent (genba dairinin)"
+   ]
+  },
+  "lv": "real",
+  "part": "gakka"
+ },
+ {
+  "cat": "法令・役割",
+  "q": "{元請|もとうけ}として{大|おお}きな{金額|きんがく}を{下請|したうけ}に{出|だ}す{工事|こうじ}で、{主任技術者|しゅにんぎじゅつしゃ}の{代|か}わりに{置|お}く{技術者|ぎじゅつしゃ}はどれか。",
+  "o": [
+   "{!監理技術者|かんりぎじゅつしゃ}",
+   "{作業主任者|さぎょうしゅにんしゃ}",
+   "{安全衛生責任者|あんぜんえいせいせきにんしゃ}",
+   "{職長|しょくちょう}"
+  ],
+  "a": 0,
+  "tl": "Kapag main contractor (元請) ka at malaki ang halaga ng trabahong ibinibigay mo sa mga subcontractor, kailangan mong maglagay ng 監理技術者 (supervising engineer) imbes na 主任技術者. Mas mataas na qualification ang kailangan dito.",
+  "en": "When the main contractor (元請) subcontracts a large amount of work, it must place a supervising engineer (監理技術者) instead of a chief engineer. This role needs a higher qualification.",
+  "g": [
+   [
+    "監理技術者",
+    "かんりぎじゅつしゃ",
+    "supervising engineer"
+   ],
+   [
+    "下請",
+    "したうけ",
+    "subcontractor"
+   ]
+  ],
+  "tq": {
+   "en": "On a job where the main contractor subcontracts a large amount, which engineer is placed instead of the chief engineer?",
+   "tl": "Sa trabahong malaki ang halagang ibinibigay ng main contractor sa subcontractor, aling engineer ang ilalagay imbes na chief engineer?"
+  },
+  "to": {
+   "en": [
+    "Supervising engineer (kanri gijutsusha)",
+    "Operations chief (sagyō shuninsha)",
+    "Health and safety officer",
+    "Foreman"
+   ],
+   "tl": [
+    "Supervising engineer (kanri gijutsusha)",
+    "Operations chief (sagyō shuninsha)",
+    "Health and safety officer",
+    "Foreman"
+   ]
+  },
+  "lv": "real",
+  "part": "gakka"
+ },
+ {
+  "cat": "法令・役割",
+  "q": "{請負契約|うけおいけいやく}にもとづき、{受注者|じゅちゅうしゃ}の{代理|だいり}として{工事現場|こうじげんば}を{運営|うんえい}・{取|と}り{締|し}まる{人|ひと}はどれか。",
+  "o": [
+   "{!現場代理人|げんばだいりにん}",
+   "{発注者|はっちゅうしゃ}",
+   "{作業員|さぎょういん}",
+   "{設計者|せっけいしゃ}"
+  ],
+  "a": 0,
+  "tl": "Ang 現場代理人 (site agent) ay ang representative ng contractor (受注者) sa site. Siya ang namamahala at nagpapatakbo ng site base sa contract. Sa maliit na site, puwedeng iisang tao ang 現場代理人 at 主任技術者.",
+  "en": "The site agent (現場代理人) represents the contractor (受注者) on site and runs and controls the site under the contract. On small sites one person may serve as both site agent and chief engineer.",
+  "g": [
+   [
+    "現場代理人",
+    "げんばだいりにん",
+    "site agent"
+   ],
+   [
+    "受注者",
+    "じゅちゅうしゃ",
+    "contractor (the one who receives the order)"
+   ],
+   [
+    "請負契約",
+    "うけおいけいやく",
+    "construction contract"
+   ]
+  ],
+  "tq": {
+   "en": "Under the contract, who runs and controls the site as the contractor's representative?",
+   "tl": "Base sa contract, sino ang nagpapatakbo ng site bilang representative ng contractor?"
+  },
+  "to": {
+   "en": [
+    "Site agent (genba dairinin)",
+    "Client (hacchūsha)",
+    "Worker",
+    "Designer"
+   ],
+   "tl": [
+    "Site agent (genba dairinin)",
+    "Client (hacchūsha)",
+    "Worker",
+    "Designer"
+   ]
+  },
+  "lv": "real",
+  "part": "gakka"
+ },
+ {
+  "cat": "法令・役割",
+  "q": "{下請|したうけ}の{会社|かいしゃ}が{選|えら}び、{元請|もとうけ}の{統括安全衛生責任者|とうかつあんぜんえいせいせきにんしゃ}との{連絡|れんらく}などを{行|おこな}う{人|ひと}はどれか。",
+  "o": [
+   "{!安全衛生責任者|あんぜんえいせいせきにんしゃ}",
+   "{監理技術者|かんりぎじゅつしゃ}",
+   "{現場代理人|げんばだいりにん}",
+   "{産業医|さんぎょうい}"
+  ],
+  "a": 0,
+  "tl": "Ang subcontractor ay pumipili ng 安全衛生責任者 (health and safety officer). Siya ang kumokonekta sa 統括安全衛生責任者 ng main contractor, at nagpapasa ng mga safety instruction sa sarili niyang mga worker. Kadalasan, ang foreman ang gumagawa nito.",
+  "en": "A subcontractor appoints a health and safety officer (安全衛生責任者), who liaises with the main contractor's general health and safety manager and passes safety instructions to their own workers. The foreman often takes this role.",
+  "g": [
+   [
+    "安全衛生責任者",
+    "あんぜんえいせいせきにんしゃ",
+    "health and safety officer"
+   ],
+   [
+    "統括",
+    "とうかつ",
+    "overall, general"
+   ],
+   [
+    "連絡",
+    "れんらく",
+    "contact, liaison"
+   ]
+  ],
+  "tq": {
+   "en": "Who is appointed by the subcontractor and liaises with the main contractor's general health and safety manager?",
+   "tl": "Sino ang pinipili ng subcontractor at kumokonekta sa general health and safety manager ng main contractor?"
+  },
+  "to": {
+   "en": [
+    "Health and safety officer (anzen eisei sekininsha)",
+    "Supervising engineer",
+    "Site agent",
+    "Company doctor"
+   ],
+   "tl": [
+    "Health and safety officer (anzen eisei sekininsha)",
+    "Supervising engineer",
+    "Site agent",
+    "Company doctor"
+   ]
+  },
+  "lv": "real",
+  "part": "gakka"
+ },
+ {
+  "cat": "法令・役割",
+  "q": "{型枠支保工|かたわくしほこう}の{組立|くみた}てなど、{法律|ほうりつ}で{決|き}められた{危険|きけん}な{作業|さぎょう}で、{作業|さぎょう}を{直接|ちょくせつ}{指揮|しき}するために{選|えら}ばれる{人|ひと}はどれか。",
+  "o": [
+   "{!作業主任者|さぎょうしゅにんしゃ}",
+   "{現場代理人|げんばだいりにん}",
+   "{発注者|はっちゅうしゃ}",
+   "{設計者|せっけいしゃ}"
+  ],
+  "a": 0,
+  "tl": "Sa mga delikadong trabaho na nakasaad sa batas, gaya ng pag-assemble ng 型枠支保工 (formwork shoring), kailangang pumili ng 作業主任者 (operations chief) na may tamang qualification. Siya ang direktang nag-uutos at nagbabantay sa trabaho.",
+  "en": "For dangerous work set by law, such as assembling formwork shoring (型枠支保工), an operations chief (作業主任者) with the proper qualification must be appointed to direct the work in person.",
+  "g": [
+   [
+    "作業主任者",
+    "さぎょうしゅにんしゃ",
+    "operations chief"
+   ],
+   [
+    "型枠支保工",
+    "かたわくしほこう",
+    "formwork shoring"
+   ],
+   [
+    "指揮",
+    "しき",
+    "direct, command"
+   ]
+  ],
+  "tq": {
+   "en": "For dangerous work set by law, such as assembling formwork shoring, who is appointed to direct the work in person?",
+   "tl": "Sa delikadong trabahong nakasaad sa batas, gaya ng pag-assemble ng formwork shoring, sino ang pinipili para direktang mag-utos sa trabaho?"
+  },
+  "to": {
+   "en": [
+    "Operations chief (sagyō shuninsha)",
+    "Site agent",
+    "Client",
+    "Designer"
+   ],
+   "tl": [
+    "Operations chief (sagyō shuninsha)",
+    "Site agent",
+    "Client",
+    "Designer"
+   ]
+  },
+  "lv": "real",
+  "part": "gakka"
+ },
+ {
+  "cat": "法令・役割",
+  "q": "つり{上|あ}げ{荷重|かじゅう}1トン{以上|いじょう}のクレーンで{!玉掛|たまか}けをするために{必要|ひつよう}なものはどれか。",
+  "o": [
+   "{玉掛|たまか}け{!技能講習|ぎのうこうしゅう}の{修了|しゅうりょう}",
+   "{運転免許証|うんてんめんきょしょう}だけ",
+   "{職長|しょくちょう}の{許可|きょか}だけ",
+   "{特別|とくべつ}なものは{必要|ひつよう}ない"
+  ],
+  "a": 0,
+  "tl": "Para sa 玉掛け (slinging) sa crane na 1 ton pataas ang lifting capacity, kailangan mong natapos ang 玉掛け技能講習 (slinging skill training). Kung mas mababa sa 1 ton, special training (特別教育) ang kailangan.",
+  "en": "Slinging (玉掛け) for a crane with a lifting capacity of 1 ton or more requires completing the slinging skill training (技能講習). Below 1 ton, special training (特別教育) is required.",
+  "g": [
+   [
+    "玉掛け",
+    "たまかけ",
+    "slinging"
+   ],
+   [
+    "技能講習",
+    "ぎのうこうしゅう",
+    "skill training course"
+   ],
+   [
+    "荷重",
+    "かじゅう",
+    "load"
+   ]
+  ],
+  "tq": {
+   "en": "What is required to do slinging on a crane with a lifting capacity of 1 ton or more?",
+   "tl": "Ano ang kailangan para mag-slinging sa crane na 1 ton pataas ang lifting capacity?"
+  },
+  "to": {
+   "en": [
+    "Completion of the slinging skill training",
+    "Only a driver's license",
+    "Only the foreman's permission",
+    "Nothing special is required"
+   ],
+   "tl": [
+    "Natapos ang slinging skill training",
+    "Driver's license lang",
+    "Permiso lang ng foreman",
+    "Walang espesyal na kailangan"
+   ]
+  },
+  "lv": "real",
+  "part": "gakka"
+ },
+ {
+  "cat": "安全衛生",
+  "q": "{労働安全衛生規則|ろうどうあんぜんえいせいきそく}で、{墜落|ついらく}のおそれがある{場所|ばしょ}に{!作業床|さぎょうしょう}を{設|もう}けなければならない{高|たか}さはどれか。",
+  "o": [
+   "1m{以上|いじょう}",
+   "1.5m{以上|いじょう}",
+   "2m{以上|いじょう}",
+   "3m{以上|いじょう}"
+  ],
+  "a": 2,
+  "tl": "Ayon sa 労働安全衛生規則 (Industrial Safety and Health Regulations), kapag nagtatrabaho sa lugar na 2m pataas at may panganib na mahulog, kailangang maglagay ng 作業床 (working platform). Kapag hindi talaga puwede, gumamit ng safety net o fall-arrest harness.",
+  "en": "Under the Industrial Safety and Health Regulations, work at a height of 2 m or more with a risk of falling requires a working platform (作業床). If that is not possible, use safety nets or a fall-arrest harness.",
+  "g": [
+   [
+    "作業床",
+    "さぎょうしょう",
+    "working platform"
+   ],
+   [
+    "墜落",
+    "ついらく",
+    "fall from height"
+   ],
+   [
+    "労働安全衛生規則",
+    "ろうどうあんぜんえいせいきそく",
+    "Industrial Safety and Health Regulations"
+   ]
+  ],
+  "tq": {
+   "en": "Under the Industrial Safety and Health Regulations, at what height must a working platform be provided where there is a risk of falling?",
+   "tl": "Ayon sa Industrial Safety and Health Regulations, sa anong taas kailangang maglagay ng working platform kapag may panganib na mahulog?"
+  },
+  "to": {
+   "en": [
+    "1 m or more",
+    "1.5 m or more",
+    "2 m or more",
+    "3 m or more"
+   ],
+   "tl": [
+    "1 m pataas",
+    "1.5 m pataas",
+    "2 m pataas",
+    "3 m pataas"
+   ]
+  },
+  "lv": "real",
+  "part": "gakka"
+ },
+ {
+  "cat": "安全衛生",
+  "q": "{法令|ほうれい}で「{!酸素欠乏|さんそけつぼう}」とされるのは、{空気中|くうきちゅう}の{酸素濃度|さんそのうど}が{何|なん}%{未満|みまん}の{状態|じょうたい}か。",
+  "o": [
+   "21%",
+   "18%",
+   "15%",
+   "10%"
+  ],
+  "a": 1,
+  "tl": "Normal na hangin ay mga 21% oxygen. Ayon sa batas, 酸素欠乏 (oxygen deficiency) kapag mababa sa 18%. Sa manhole, tangke, o malalim na hukay, sukatin muna ang oxygen bago pumasok at mag-ventilate.",
+  "en": "Normal air is about 21% oxygen. By law, oxygen deficiency (酸素欠乏) means below 18%. Before entering manholes, tanks or deep pits, measure the oxygen and ventilate.",
+  "g": [
+   [
+    "酸素欠乏",
+    "さんそけつぼう",
+    "oxygen deficiency"
+   ],
+   [
+    "濃度",
+    "のうど",
+    "concentration"
+   ],
+   [
+    "未満",
+    "みまん",
+    "less than"
+   ]
+  ],
+  "tq": {
+   "en": "By law, \"oxygen deficiency\" means the oxygen concentration in the air is below what percent?",
+   "tl": "Ayon sa batas, ang \"oxygen deficiency\" ay kapag ang oxygen sa hangin ay mababa sa ilang porsyento?"
+  },
+  "to": {
+   "en": [
+    "21%",
+    "18%",
+    "15%",
+    "10%"
+   ],
+   "tl": [
+    "21%",
+    "18%",
+    "15%",
+    "10%"
+   ]
+  },
+  "lv": "real",
+  "part": "gakka"
+ },
+ {
+  "cat": "施工知識",
+  "q": "{工場|こうじょう}で{作|つく}ったコンクリート{杭|くい}や{鋼管杭|こうかんぐい}を、{地盤|じばん}に{打|う}ち{込|こ}んだり{埋|う}め{込|こ}んだりする{杭|くい}を{何|なん}というか。",
+  "o": [
+   "{!既製杭|きせいぐい}",
+   "{場所打|ばしょう}ちコンクリート{杭|くい}",
+   "{丁張|ちょうは}り",
+   "{土留|どど}め"
+  ],
+  "a": 0,
+  "tl": "Ang 既製杭 (precast pile) ay ginawa na sa factory, gaya ng concrete pile o steel pipe pile, at ipinapasok sa lupa sa site. Ang 場所打ちコンクリート杭 (cast-in-place pile) naman ay hinuhukay ang butas sa site, nilalagyan ng rebar cage, at binubuhusan ng concrete.",
+  "en": "A precast pile (既製杭) is made in a factory, such as a concrete or steel pipe pile, and driven or embedded into the ground on site. A cast-in-place pile is made by digging a hole on site, placing a rebar cage and pouring concrete.",
+  "g": [
+   [
+    "既製杭",
+    "きせいぐい",
+    "precast pile"
+   ],
+   [
+    "鋼管杭",
+    "こうかんぐい",
+    "steel pipe pile"
+   ],
+   [
+    "地盤",
+    "じばん",
+    "ground"
+   ]
+  ],
+  "tq": {
+   "en": "What is a pile made in a factory, such as a concrete or steel pipe pile, that is driven or embedded into the ground called?",
+   "tl": "Ano ang tawag sa pile na ginawa sa factory, gaya ng concrete o steel pipe pile, na ipinapasok sa lupa?"
+  },
+  "to": {
+   "en": [
+    "Precast pile (kisei-gui)",
+    "Cast-in-place concrete pile",
+    "Batter board (chōhari)",
+    "Earth retaining (dodome)"
+   ],
+   "tl": [
+    "Precast pile (kisei-gui)",
+    "Cast-in-place concrete pile",
+    "Batter board (chōhari)",
+    "Earth retaining (dodome)"
+   ]
+  },
+  "lv": "real",
+  "part": "gakka"
+ },
+ {
+  "cat": "施工知識",
+  "q": "{!浚渫|しゅんせつ}{工事|こうじ}の{説明|せつめい}として{正|ただ}しいものはどれか。",
+  "o": [
+   "{川|かわ}や{港|みなと}の{水底|みなそこ}の{土砂|どしゃ}を{掘|ほ}って{取|と}り{除|のぞ}く",
+   "{建物|たてもの}の{屋根|やね}をつくる",
+   "{道路|どうろ}に{白線|はくせん}を{引|ひ}く",
+   "{電線|でんせん}を{地中|ちちゅう}に{埋|う}める"
+  ],
+  "a": 0,
+  "tl": "Ang 浚渫 (dredging) ay paghukay at pagtanggal ng lupa at buhangin sa ilalim ng ilog o pantalan, para lumalim ang tubig at makadaan ang barko o umagos nang maayos ang tubig.",
+  "en": "Dredging (浚渫) means digging up and removing soil and sand from the bottom of rivers or harbors, to deepen the water for ships or to keep water flowing.",
+  "g": [
+   [
+    "浚渫",
+    "しゅんせつ",
+    "dredging"
+   ],
+   [
+    "土砂",
+    "どしゃ",
+    "soil and sand"
+   ],
+   [
+    "水底",
+    "みなそこ",
+    "bottom of the water"
+   ]
+  ],
+  "tq": {
+   "en": "Which correctly describes dredging work?",
+   "tl": "Alin ang tamang paliwanag ng dredging work?"
+  },
+  "to": {
+   "en": [
+    "Digging up and removing soil and sand from the bottom of rivers or harbors",
+    "Building the roof of a building",
+    "Painting white lines on roads",
+    "Burying electric cables underground"
+   ],
+   "tl": [
+    "Paghukay at pagtanggal ng lupa at buhangin sa ilalim ng ilog o pantalan",
+    "Paggawa ng bubong ng building",
+    "Pagpinta ng white line sa kalsada",
+    "Pagbaon ng kable ng kuryente sa ilalim ng lupa"
+   ]
+  },
+  "lv": "real",
+  "part": "gakka"
+ },
+ {
+  "cat": "施工知識",
+  "q": "{鉄筋|てっきん}の{!継手|つぎて}の{種類|しゅるい}ではないものはどれか。",
+  "o": [
+   "{重|かさ}ね{継手|つぎて}",
+   "ガス{圧接|あっせつ}{継手|つぎて}",
+   "{機械式継手|きかいしきつぎて}",
+   "{!高力|こうりょく}ボルト{摩擦接合|まさつせつごう}"
+  ],
+  "a": 3,
+  "tl": "Ang mga uri ng 継手 (splice) ng rebar ay 重ね継手 (lap splice), ガス圧接継手 (gas pressure welding), 機械式継手 (mechanical splice), at welded splice. Ang 高力ボルト摩擦接合 (high-strength bolt friction joint) ay ginagamit sa steel frame, hindi sa rebar.",
+  "en": "Rebar splices (継手) include lap splices, gas pressure welded splices, mechanical splices and welded splices. A high-strength bolt friction joint is used for steel frames, not rebar.",
+  "g": [
+   [
+    "継手",
+    "つぎて",
+    "splice, joint"
+   ],
+   [
+    "圧接",
+    "あっせつ",
+    "pressure welding"
+   ],
+   [
+    "高力ボルト",
+    "こうりょくボルト",
+    "high-strength bolt"
+   ]
+  ],
+  "tq": {
+   "en": "Which is NOT a type of rebar splice?",
+   "tl": "Alin ang HINDI uri ng rebar splice?"
+  },
+  "to": {
+   "en": [
+    "Lap splice",
+    "Gas pressure welded splice",
+    "Mechanical splice",
+    "High-strength bolt friction joint"
+   ],
+   "tl": [
+    "Lap splice",
+    "Gas pressure welded splice",
+    "Mechanical splice",
+    "High-strength bolt friction joint"
+   ]
+  },
+  "lv": "real",
+  "part": "gakka"
+ },
+ {
+  "cat": "施工知識",
+  "q": "{鉄筋|てっきん}コンクリートの「{!かぶり厚|かぶりあつ}さ」を{確保|かくほ}する{主|おも}な{目的|もくてき}はどれか。",
+  "o": [
+   "{鉄筋|てっきん}がさびるのを{防|ふせ}ぎ、{火災|かさい}から{守|まも}る",
+   "コンクリートの{色|いろ}をきれいにする",
+   "{工事|こうじ}を{早|はや}く{終|お}わらせる",
+   "{材料費|ざいりょうひ}を{減|へ}らす"
+  ],
+  "a": 0,
+  "tl": "Ang かぶり厚さ (concrete cover) ay ang kapal ng concrete na tumatakip sa rebar. Pinoprotektahan nito ang rebar laban sa kalawang at sunog, at tumutulong para kumapit nang maayos ang concrete sa rebar.",
+  "en": "Concrete cover (かぶり厚さ) is the thickness of concrete over the rebar. It protects the rebar from rust and fire and helps the concrete bond to the rebar.",
+  "g": [
+   [
+    "かぶり厚さ",
+    "かぶりあつさ",
+    "concrete cover"
+   ],
+   [
+    "鉄筋",
+    "てっきん",
+    "rebar"
+   ],
+   [
+    "火災",
+    "かさい",
+    "fire"
+   ]
+  ],
+  "tq": {
+   "en": "What is the main purpose of keeping the proper concrete cover in reinforced concrete?",
+   "tl": "Ano ang main purpose ng tamang concrete cover sa reinforced concrete?"
+  },
+  "to": {
+   "en": [
+    "To stop the rebar from rusting and protect it from fire",
+    "To make the concrete color nicer",
+    "To finish the work faster",
+    "To reduce material costs"
+   ],
+   "tl": [
+    "Para hindi kalawangin ang rebar at maprotektahan sa sunog",
+    "Para gumanda ang kulay ng concrete",
+    "Para matapos agad ang trabaho",
+    "Para bumaba ang gastos sa materyales"
+   ]
+  },
+  "lv": "real",
+  "part": "gakka"
+ },
+ {
+  "cat": "施工知識",
+  "q": "{!盛土|もりど}を{作|つく}るときの{正|ただ}しい{方法|ほうほう}はどれか。",
+  "o": [
+   "{土|つち}を{薄|うす}く{何層|なんそう}にも{分|わ}けて、そのたびに{締|し}め{固|かた}める",
+   "{一度|いちど}に{厚|あつ}く{盛|も}ってから{最後|さいご}に{締|し}め{固|かた}める",
+   "{締|し}め{固|かた}めずに{自然|しぜん}に{沈|しず}むのを{待|ま}つ",
+   "{雨|あめ}の{日|ひ}に{水|みず}を{含|ふく}ませて{盛|も}る"
+  ],
+  "a": 0,
+  "tl": "Sa 盛土 (embankment), ilagay ang lupa nang manipis na layer, tapos i-compact (締め固め) bawat layer bago maglagay ng susunod. Kapag makapal ang inilagay nang isang beses, hindi masisiksik ang ilalim at puwedeng lumubog o gumuho.",
+  "en": "For an embankment (盛土), spread the soil in thin layers and compact (締め固め) each layer before adding the next. A thick layer placed at once cannot be compacted at the bottom and may settle or collapse.",
+  "g": [
+   [
+    "盛土",
+    "もりど",
+    "embankment, fill"
+   ],
+   [
+    "締め固め",
+    "しめかため",
+    "compaction"
+   ],
+   [
+    "層",
+    "そう",
+    "layer"
+   ]
+  ],
+  "tq": {
+   "en": "Which is the correct way to build an embankment?",
+   "tl": "Alin ang tamang paraan ng paggawa ng embankment?"
+  },
+  "to": {
+   "en": [
+    "Spread soil in many thin layers and compact each one",
+    "Pile it thick at once and compact only at the end",
+    "Don't compact it and wait for it to settle naturally",
+    "Soak it with water on a rainy day and pile it"
+   ],
+   "tl": [
+    "Ilagay nang manipis na layer at i-compact bawat isa",
+    "Ilagay nang makapal nang isang beses at i-compact sa dulo lang",
+    "Huwag i-compact at hintaying lumubog nang kusa",
+    "Basain sa ulan bago ilagay"
+   ]
+  },
+  "lv": "real",
+  "part": "gakka"
+ },
+ {
+  "cat": "施工知識",
+  "q": "{地震|じしん}の{揺|ゆ}れを、{建物|たてもの}の{中|なか}に{設|もう}けたダンパーなどで{吸収|きゅうしゅう}して{小|ちい}さくする{構造|こうぞう}を{何|なん}というか。",
+  "o": [
+   "{!制振|せいしん}{構造|こうぞう}",
+   "{!免震|めんしん}{構造|こうぞう}",
+   "{仮設|かせつ}{構造|こうぞう}",
+   "{木造|もくぞう}"
+  ],
+  "a": 0,
+  "tl": "Ang 制振構造 (vibration control) ay naglalagay ng damper sa loob ng building para sumipsip ng lindol. Ang 免震構造 (base isolation) naman ay naglalagay ng rubber bearing sa pagitan ng building at foundation para hindi gaanong maipasa ang galaw ng lupa.",
+  "en": "Vibration control structures (制振構造) use dampers inside the building to absorb earthquake shaking. Base isolation (免震構造) places rubber bearings between the building and the foundation so ground motion is not passed up.",
+  "g": [
+   [
+    "制振",
+    "せいしん",
+    "vibration control"
+   ],
+   [
+    "免震",
+    "めんしん",
+    "base isolation"
+   ],
+   [
+    "吸収",
+    "きゅうしゅう",
+    "absorb"
+   ]
+  ],
+  "tq": {
+   "en": "What is a structure that absorbs and reduces earthquake shaking with dampers inside the building called?",
+   "tl": "Ano ang tawag sa structure na sumisipsip at nagbabawas ng lindol gamit ang damper sa loob ng building?"
+  },
+  "to": {
+   "en": [
+    "Vibration control structure (seishin)",
+    "Base isolation structure (menshin)",
+    "Temporary structure",
+    "Wooden building"
+   ],
+   "tl": [
+    "Vibration control structure (seishin)",
+    "Base isolation structure (menshin)",
+    "Temporary structure",
+    "Wooden building"
+   ]
+  },
+  "lv": "real",
+  "part": "gakka"
+ },
+ {
+  "cat": "施工知識",
+  "q": "{!型枠支保工|かたわくしほこう}の{説明|せつめい}として{正|ただ}しいものはどれか。",
+  "o": [
+   "コンクリートを{打|う}つとき、{型枠|かたわく}を{支|ささ}える{仮設|かせつ}の{支柱|しちゅう}など",
+   "{完成|かんせい}した{建物|たてもの}の{柱|はしら}",
+   "{地面|じめん}を{掘|ほ}る{機械|きかい}",
+   "{鉄筋|てっきん}をつなぐ{部品|ぶひん}"
+  ],
+  "a": 0,
+  "tl": "Ang 型枠支保工 (formwork shoring) ay mga pansamantalang poste at beam na sumusuporta sa formwork habang binubuhusan at pinapatigas ang concrete. Kapag bumigay ito, malaking aksidente, kaya may 作業主任者 na nagbabantay sa pag-assemble.",
+  "en": "Formwork shoring (型枠支保工) is the temporary posts and beams that hold up the formwork while concrete is poured and cures. A collapse causes serious accidents, so an operations chief supervises its assembly.",
+  "g": [
+   [
+    "型枠支保工",
+    "かたわくしほこう",
+    "formwork shoring"
+   ],
+   [
+    "型枠",
+    "かたわく",
+    "formwork"
+   ],
+   [
+    "仮設",
+    "かせつ",
+    "temporary"
+   ]
+  ],
+  "tq": {
+   "en": "Which correctly describes formwork shoring?",
+   "tl": "Alin ang tamang paliwanag ng formwork shoring?"
+  },
+  "to": {
+   "en": [
+    "Temporary posts and supports that hold up the formwork when pouring concrete",
+    "The columns of the finished building",
+    "A machine for digging the ground",
+    "A part that joins rebar"
+   ],
+   "tl": [
+    "Pansamantalang poste at suporta ng formwork habang nagbubuhos ng concrete",
+    "Mga poste ng tapos na building",
+    "Makina sa paghukay ng lupa",
+    "Piyesa na nagdudugtong ng rebar"
+   ]
+  },
+  "lv": "real",
+  "part": "gakka"
+ },
+ {
+  "cat": "土工",
+  "q": "{盛土|もりど}や{切土|きりど}をしたときにできる{斜面|しゃめん}を{何|なん}というか。",
+  "o": [
+   "{!法面|のりめん}",
+   "{路盤|ろばん}",
+   "{天端|てんば}",
+   "{床掘|とこぼ}り"
+  ],
+  "a": 0,
+  "tl": "Ang 法面 (slope face) ay ang slope na nabubuo kapag nag-fill (盛土) o nag-cut (切土) ng lupa. Pinoprotektahan ito ng grass, concrete, o net para hindi gumuho sa ulan.",
+  "en": "The slope formed by filling (盛土) or cutting (切土) ground is called a slope face (法面). It is protected with grass, concrete or netting so rain does not wash it away.",
+  "g": [
+   [
+    "法面",
+    "のりめん",
+    "slope face"
+   ],
+   [
+    "切土",
+    "きりど",
+    "cut (excavation)"
+   ],
+   [
+    "斜面",
+    "しゃめん",
+    "slope"
+   ]
+  ],
+  "tq": {
+   "en": "What is the slope formed by filling or cutting ground called?",
+   "tl": "Ano ang tawag sa slope na nabubuo kapag nag-fill o nag-cut ng lupa?"
+  },
+  "to": {
+   "en": [
+    "Slope face (norimen)",
+    "Roadbed base (roban)",
+    "Crest (tenba)",
+    "Trench excavation (tokobori)"
+   ],
+   "tl": [
+    "Slope face (norimen)",
+    "Roadbed base (roban)",
+    "Crest (tenba)",
+    "Trench excavation (tokobori)"
+   ]
+  },
+  "lv": "real",
+  "part": "jitsugi",
+  "kubun": "土木"
+ },
+ {
+  "cat": "土工",
+  "q": "{掘削|くっさく}したとき、{周|まわ}りの{土|つち}が{崩|くず}れないように{支|ささ}える{仮設|かせつ}の{構造|こうぞう}を{何|なん}というか。",
+  "o": [
+   "{!土留|どど}め（{山留|やまど}め）",
+   "{法面|のりめん}",
+   "{舗装|ほそう}",
+   "{丁張|ちょうは}り"
+  ],
+  "a": 0,
+  "tl": "Ang 土留め (earth retaining, tinatawag ding 山留め) ay pansamantalang pader, gaya ng sheet pile at strut, na pumipigil sa pagguho ng lupa sa paligid ng hinukay. Mahalaga ito sa safety ng mga nasa loob ng hukay.",
+  "en": "Earth retaining (土留め, also 山留め) is a temporary wall, such as sheet piles and struts, that stops the soil around an excavation from collapsing. It protects the people working in the pit.",
+  "g": [
+   [
+    "土留め",
+    "どどめ",
+    "earth retaining"
+   ],
+   [
+    "掘削",
+    "くっさく",
+    "excavation"
+   ],
+   [
+    "崩れる",
+    "くずれる",
+    "to collapse"
+   ]
+  ],
+  "tq": {
+   "en": "What is the temporary structure that holds back the surrounding soil so it does not collapse during excavation?",
+   "tl": "Ano ang tawag sa pansamantalang structure na pumipigil sa pagguho ng lupa sa paligid ng hinukay?"
+  },
+  "to": {
+   "en": [
+    "Earth retaining (dodome / yamadome)",
+    "Slope face",
+    "Pavement",
+    "Batter board"
+   ],
+   "tl": [
+    "Earth retaining (dodome / yamadome)",
+    "Slope face",
+    "Pavement",
+    "Batter board"
+   ]
+  },
+  "lv": "real",
+  "part": "jitsugi",
+  "kubun": "土木"
+ },
+ {
+  "cat": "安全",
+  "q": "{地山|じやま}の{掘削|くっさく}で、{作業主任者|さぎょうしゅにんしゃ}を{選|えら}ばなければならない{掘削面|くっさくめん}の{高|たか}さはどれか。",
+  "o": [
+   "1m{以上|いじょう}",
+   "1.5m{以上|いじょう}",
+   "2m{以上|いじょう}",
+   "5m{以上|いじょう}"
+  ],
+  "a": 2,
+  "tl": "Kapag ang taas ng hinuhukay na pader ng lupa (掘削面) ay 2m pataas, kailangang pumili ng 地山の掘削作業主任者 (excavation operations chief) na siyang mag-uutos at magbabantay sa trabaho.",
+  "en": "When the excavation face (掘削面) is 2 m high or more, an excavation operations chief (地山の掘削作業主任者) must be appointed to direct and watch the work.",
+  "g": [
+   [
+    "地山",
+    "じやま",
+    "natural ground"
+   ],
+   [
+    "掘削面",
+    "くっさくめん",
+    "excavation face"
+   ],
+   [
+    "作業主任者",
+    "さぎょうしゅにんしゃ",
+    "operations chief"
+   ]
+  ],
+  "tq": {
+   "en": "In natural-ground excavation, at what height of the excavation face must an operations chief be appointed?",
+   "tl": "Sa paghukay ng natural na lupa, sa anong taas ng excavation face kailangang pumili ng operations chief?"
+  },
+  "to": {
+   "en": [
+    "1 m or more",
+    "1.5 m or more",
+    "2 m or more",
+    "5 m or more"
+   ],
+   "tl": [
+    "1 m pataas",
+    "1.5 m pataas",
+    "2 m pataas",
+    "5 m pataas"
+   ]
+  },
+  "lv": "real",
+  "part": "jitsugi",
+  "kubun": "土木"
+ },
+ {
+  "cat": "舗装",
+  "q": "アスファルト{舗装|ほそう}で、{一番上|いちばんうえ}にある{層|そう}はどれか。",
+  "o": [
+   "{!表層|ひょうそう}",
+   "{路床|ろしょう}",
+   "{下層路盤|かそうろばん}",
+   "{上層路盤|じょうそうろばん}"
+  ],
+  "a": 0,
+  "tl": "Ang mga layer ng asphalt pavement mula sa ibaba: 路床 (subgrade), 下層路盤 (lower base), 上層路盤 (upper base), 基層 (binder course), at sa pinakaitaas ang 表層 (surface course) na dinadaanan ng sasakyan.",
+  "en": "Asphalt pavement layers from the bottom are the subgrade (路床), lower base, upper base, binder course (基層), and on top the surface course (表層) that vehicles drive on.",
+  "g": [
+   [
+    "表層",
+    "ひょうそう",
+    "surface course"
+   ],
+   [
+    "路床",
+    "ろしょう",
+    "subgrade"
+   ],
+   [
+    "路盤",
+    "ろばん",
+    "base course"
+   ]
+  ],
+  "tq": {
+   "en": "In asphalt pavement, which layer is on the very top?",
+   "tl": "Sa asphalt pavement, aling layer ang nasa pinakaitaas?"
+  },
+  "to": {
+   "en": [
+    "Surface course (hyōsō)",
+    "Subgrade (roshō)",
+    "Lower base course",
+    "Upper base course"
+   ],
+   "tl": [
+    "Surface course (hyōsō)",
+    "Subgrade (roshō)",
+    "Lower base course",
+    "Upper base course"
+   ]
+  },
+  "lv": "real",
+  "part": "jitsugi",
+  "kubun": "土木"
+ },
+ {
+  "cat": "機械",
+  "q": "{狭|せま}い{場所|ばしょ}で{土|つち}を{締|し}め{固|かた}めるときに、{人|ひと}が{持|も}って{使|つか}う{機械|きかい}はどれか。",
+  "o": [
+   "ランマー",
+   "バックホウ",
+   "クレーン",
+   "ダンプトラック"
+  ],
+  "a": 0,
+  "tl": "Ang ランマー (rammer, tinatawag ding tamper) ay maliit na makina na hawak ng tao at tumatalbog para siksikin ang lupa sa makitid na lugar, gaya ng tabi ng pader o tubo. Ang バックホウ (backhoe) ay panghukay.",
+  "en": "A rammer (ランマー, also called a tamper) is a small hand-held machine that bounces to compact soil in tight spots, such as beside walls or pipes. A backhoe is for digging.",
+  "g": [
+   [
+    "ランマー",
+    "ランマー",
+    "rammer, tamper"
+   ],
+   [
+    "締め固め",
+    "しめかため",
+    "compaction"
+   ],
+   [
+    "バックホウ",
+    "バックホウ",
+    "backhoe (excavator)"
+   ]
+  ],
+  "tq": {
+   "en": "Which hand-held machine is used to compact soil in narrow places?",
+   "tl": "Aling makina na hawak ng tao ang ginagamit para siksikin ang lupa sa makitid na lugar?"
+  },
+  "to": {
+   "en": [
+    "Rammer",
+    "Backhoe",
+    "Crane",
+    "Dump truck"
+   ],
+   "tl": [
+    "Rammer",
+    "Backhoe",
+    "Crane",
+    "Dump truck"
+   ]
+  },
+  "lv": "real",
+  "part": "jitsugi",
+  "kubun": "土木"
+ },
+ {
+  "cat": "測量",
+  "q": "{盛土|もりど}や{切土|きりど}の{高|たか}さや{勾配|こうばい}の{目安|めやす}として、{杭|くい}と{板|いた}で{設置|せっち}するものを{何|なん}というか。",
+  "o": [
+   "{!丁張|ちょうは}り",
+   "{土留|どど}め",
+   "{足場|あしば}",
+   "{型枠|かたわく}"
+  ],
+  "a": 0,
+  "tl": "Ang 丁張り (batter board) ay mga stake at board na inilalagay sa site para ipakita ang tamang taas at slope (勾配) ng fill o cut. Ito ang tinitingnan ng operator at mga worker habang nagtatrabaho.",
+  "en": "Batter boards (丁張り) are stakes and boards set on site to show the correct height and slope (勾配) of a fill or cut. Operators and workers follow them while working.",
+  "g": [
+   [
+    "丁張り",
+    "ちょうはり",
+    "batter board"
+   ],
+   [
+    "勾配",
+    "こうばい",
+    "slope, gradient"
+   ],
+   [
+    "目安",
+    "めやす",
+    "guide, reference"
+   ]
+  ],
+  "tq": {
+   "en": "What are the stakes and boards set up as a guide for the height and slope of a fill or cut called?",
+   "tl": "Ano ang tawag sa mga stake at board na gabay sa taas at slope ng fill o cut?"
+  },
+  "to": {
+   "en": [
+    "Batter board (chōhari)",
+    "Earth retaining",
+    "Scaffold",
+    "Formwork"
+   ],
+   "tl": [
+    "Batter board (chōhari)",
+    "Earth retaining",
+    "Scaffold",
+    "Formwork"
+   ]
+  },
+  "lv": "real",
+  "part": "jitsugi",
+  "kubun": "土木"
+ },
+ {
+  "cat": "測量",
+  "q": "{工事|こうじ}の{基準|きじゅん}となる{線|せん}や{位置|いち}を、{床|ゆか}などに{書|か}き{出|だ}す{作業|さぎょう}を{何|なん}というか。",
+  "o": [
+   "{!墨出|すみだ}し",
+   "{養生|ようじょう}",
+   "{配筋|はいきん}",
+   "{塗装|とそう}"
+  ],
+  "a": 0,
+  "tl": "Ang 墨出し (marking out) ay pagguhit ng reference line at posisyon sa sahig, pader, o kisame, base sa drawing. Dito nakabatay kung saan ilalagay ang pader, poste, at iba pa, kaya kailangang tumpak.",
+  "en": "Marking out (墨出し) means drawing the reference lines and positions on floors, walls or ceilings from the drawings. Walls, columns and fittings are placed by these lines, so they must be accurate.",
+  "g": [
+   [
+    "墨出し",
+    "すみだし",
+    "marking out"
+   ],
+   [
+    "基準",
+    "きじゅん",
+    "reference, standard"
+   ],
+   [
+    "養生",
+    "ようじょう",
+    "curing / protection"
+   ]
+  ],
+  "tq": {
+   "en": "What is the work of drawing the reference lines and positions for construction on the floor called?",
+   "tl": "Ano ang tawag sa pagguhit ng reference line at posisyon sa sahig para sa construction?"
+  },
+  "to": {
+   "en": [
+    "Marking out (sumidashi)",
+    "Curing / protection (yōjō)",
+    "Rebar arrangement (haikin)",
+    "Painting (tosō)"
+   ],
+   "tl": [
+    "Marking out (sumidashi)",
+    "Curing / protection (yōjō)",
+    "Rebar arrangement (haikin)",
+    "Painting (tosō)"
+   ]
+  },
+  "lv": "real",
+  "part": "jitsugi",
+  "kubun": "建築"
+ },
+ {
+  "cat": "鉄骨",
+  "q": "{鉄骨|てっこつ}の{!高力|こうりょく}ボルトの{締|し}め{付|つ}けで、{一次締|いちじじ}めの{後|あと}に{行|おこな}うものはどれか。",
+  "o": [
+   "マーキングをしてから{本締|ほんじ}めをする",
+   "すぐに{塗装|とそう}をする",
+   "ボルトを{全部|ぜんぶ}{外|はず}す",
+   "{溶接|ようせつ}でボルトを{固|かた}める"
+  ],
+  "a": 0,
+  "tl": "Sa 高力ボルト (high-strength bolt): una ang 一次締め (first tightening), tapos lagyan ng marking ang bolt, nut, at plate, saka ang 本締め (final tightening). Sa marking, makikita kung umikot nang tama ang nut at kung may nakalimutan.",
+  "en": "For high-strength bolts: first tightening (一次締め), then marking across the bolt, nut and plate, then final tightening (本締め). The marking shows whether each nut turned correctly and none was missed.",
+  "g": [
+   [
+    "高力ボルト",
+    "こうりょくボルト",
+    "high-strength bolt"
+   ],
+   [
+    "一次締め",
+    "いちじじめ",
+    "first tightening"
+   ],
+   [
+    "本締め",
+    "ほんじめ",
+    "final tightening"
+   ]
+  ],
+  "tq": {
+   "en": "When tightening high-strength bolts on a steel frame, what comes after the first tightening?",
+   "tl": "Sa pag-tighten ng high-strength bolt sa steel frame, ano ang kasunod ng first tightening?"
+  },
+  "to": {
+   "en": [
+    "Mark them, then do the final tightening",
+    "Paint them right away",
+    "Remove all the bolts",
+    "Weld the bolts in place"
+   ],
+   "tl": [
+    "Lagyan ng marking, saka i-final tighten",
+    "Pinturahan agad",
+    "Tanggalin lahat ng bolt",
+    "I-weld ang bolt"
+   ]
+  },
+  "lv": "real",
+  "part": "jitsugi",
+  "kubun": "建築"
+ },
+ {
+  "cat": "コンクリート",
+  "q": "コンクリートを{打|う}った{後|あと}の「{!養生|ようじょう}」として{正|ただ}しいものはどれか。",
+  "o": [
+   "{急|きゅう}な{乾燥|かんそう}や{低温|ていおん}を{防|ふせ}ぎ、{散水|さんすい}などで{湿|しめ}った{状態|じょうたい}に{保|たも}つ",
+   "すぐに{上|うえ}を{重機|じゅうき}で{走|はし}る",
+   "{強|つよ}い{日光|にっこう}で{早|はや}く{乾|かわ}かす",
+   "{水|みず}を{全|まった}くかけない"
+  ],
+  "a": 0,
+  "tl": "Pagkatapos magbuhos ng concrete, kailangan ang 養生 (curing): iwasan ang biglang pagkatuyo at sobrang lamig, at panatilihing basa sa pagwisik ng tubig o pagtakip. Kapag natuyo agad, magkakaroon ng crack at hindi lalakas nang tama.",
+  "en": "After pouring concrete, curing (養生) is needed: prevent sudden drying and low temperatures and keep it moist by spraying water or covering it. Concrete that dries too fast cracks and does not reach full strength.",
+  "g": [
+   [
+    "養生",
+    "ようじょう",
+    "curing"
+   ],
+   [
+    "乾燥",
+    "かんそう",
+    "drying"
+   ],
+   [
+    "散水",
+    "さんすい",
+    "spraying water"
+   ]
+  ],
+  "tq": {
+   "en": "Which is correct \"curing\" after pouring concrete?",
+   "tl": "Alin ang tamang \"curing\" pagkatapos magbuhos ng concrete?"
+  },
+  "to": {
+   "en": [
+    "Prevent sudden drying and cold, and keep it moist by spraying water",
+    "Drive heavy machines on it right away",
+    "Dry it quickly in strong sunlight",
+    "Never put water on it"
+   ],
+   "tl": [
+    "Iwasan ang biglang pagkatuyo at lamig, at panatilihing basa sa pagwisik ng tubig",
+    "Padaanan agad ng mabigat na makina",
+    "Patuyuin agad sa matinding araw",
+    "Huwag kailanman lagyan ng tubig"
+   ]
+  },
+  "lv": "real",
+  "part": "jitsugi",
+  "kubun": "建築"
+ },
+ {
+  "cat": "コンクリート",
+  "q": "まだ{固|かた}まっていないコンクリートの{軟|やわ}らかさを{調|しら}べる{試験|しけん}はどれか。",
+  "o": [
+   "{!スランプ試験|スランプしけん}",
+   "{水圧試験|すいあつしけん}",
+   "{絶縁抵抗測定|ぜつえんていこうそくてい}",
+   "{引張試験|ひっぱりしけん}"
+  ],
+  "a": 0,
+  "tl": "Ang スランプ試験 (slump test) ay sumusukat kung gaano kalambot ang fresh concrete. Pinupuno ang cone, inaangat, at sinusukat kung ilang cm bumaba ang concrete. Ginagawa ito pagdating ng concrete sa site.",
+  "en": "The slump test (スランプ試験) measures how soft fresh concrete is. A cone is filled and lifted, and the drop of the concrete in cm is measured. It is done when the concrete arrives on site.",
+  "g": [
+   [
+    "スランプ試験",
+    "スランプしけん",
+    "slump test"
+   ],
+   [
+    "軟らかさ",
+    "やわらかさ",
+    "softness"
+   ]
+  ],
+  "tq": {
+   "en": "Which test checks how soft fresh (not yet hardened) concrete is?",
+   "tl": "Aling test ang sumusukat kung gaano kalambot ang fresh concrete?"
+  },
+  "to": {
+   "en": [
+    "Slump test",
+    "Water pressure test",
+    "Insulation resistance measurement",
+    "Tensile test"
+   ],
+   "tl": [
+    "Slump test",
+    "Water pressure test",
+    "Insulation resistance measurement",
+    "Tensile test"
+   ]
+  },
+  "lv": "real",
+  "part": "jitsugi",
+  "kubun": "建築"
+ },
+ {
+  "cat": "仕上げ",
+  "q": "{屋上|おくじょう}やベランダなどで、{雨水|あまみず}が{建物|たてもの}の{中|なか}に{入|はい}らないようにする{工事|こうじ}はどれか。",
+  "o": [
+   "{!防水|ぼうすい}{工事|こうじ}",
+   "{解体|かいたい}{工事|こうじ}",
+   "{杭|くい}{工事|こうじ}",
+   "{鉄骨|てっこつ}{工事|こうじ}"
+  ],
+  "a": 0,
+  "tl": "Ang 防水工事 (waterproofing work) ay paglalagay ng waterproof layer, gaya ng asphalt o sheet, sa bubong, rooftop, at veranda para hindi tumagas ang ulan sa loob ng building.",
+  "en": "Waterproofing work (防水工事) applies a waterproof layer, such as asphalt or sheets, on roofs, rooftops and balconies so rain does not leak into the building.",
+  "g": [
+   [
+    "防水",
+    "ぼうすい",
+    "waterproofing"
+   ],
+   [
+    "屋上",
+    "おくじょう",
+    "rooftop"
+   ],
+   [
+    "雨水",
+    "あまみず",
+    "rainwater"
+   ]
+  ],
+  "tq": {
+   "en": "Which work stops rainwater from getting into the building at rooftops and balconies?",
+   "tl": "Aling trabaho ang pumipigil na pumasok ang ulan sa building sa rooftop at veranda?"
+  },
+  "to": {
+   "en": [
+    "Waterproofing work",
+    "Demolition work",
+    "Piling work",
+    "Steel frame work"
+   ],
+   "tl": [
+    "Waterproofing work",
+    "Demolition work",
+    "Piling work",
+    "Steel frame work"
+   ]
+  },
+  "lv": "real",
+  "part": "jitsugi",
+  "kubun": "建築"
+ },
+ {
+  "cat": "安全",
+  "q": "{脚立|きゃたつ}の{正|ただ}しい{使|つか}い{方|かた}はどれか。",
+  "o": [
+   "{開|ひら}き{止|ど}めを{確実|かくじつ}にかけ、{天板|てんいた}には{乗|の}らない",
+   "{天板|てんいた}の{上|うえ}に{立|た}って{作業|さぎょう}する",
+   "{開|ひら}き{止|ど}めをかけずに{使|つか}う",
+   "{傾|かたむ}いた{床|ゆか}にそのまま{置|お}く"
+  ],
+  "a": 0,
+  "tl": "Sa 脚立 (stepladder), siguraduhing naka-lock ang 開き止め (spreader lock) at nasa patag na sahig. Huwag tumayo o umupo sa 天板 (top plate) dahil madaling mawalan ng balanse at mahulog.",
+  "en": "With a stepladder (脚立), make sure the spreader lock (開き止め) is set and it stands on a level floor. Never stand or sit on the top plate (天板), because you can easily lose balance and fall.",
+  "g": [
+   [
+    "脚立",
+    "きゃたつ",
+    "stepladder"
+   ],
+   [
+    "天板",
+    "てんいた",
+    "top plate"
+   ],
+   [
+    "開き止め",
+    "ひらきどめ",
+    "spreader lock"
+   ]
+  ],
+  "tq": {
+   "en": "Which is the correct way to use a stepladder?",
+   "tl": "Alin ang tamang paggamit ng stepladder?"
+  },
+  "to": {
+   "en": [
+    "Set the spreader lock firmly and don't stand on the top plate",
+    "Stand on the top plate to work",
+    "Use it without setting the spreader lock",
+    "Put it on a sloping floor as it is"
+   ],
+   "tl": [
+    "I-lock nang maayos ang spreader lock at huwag tumayo sa top plate",
+    "Tumayo sa top plate habang nagtatrabaho",
+    "Gamitin nang hindi naka-lock ang spreader",
+    "Ilagay sa tagilid na sahig"
+   ]
+  },
+  "lv": "real",
+  "part": "jitsugi",
+  "kubun": "建築"
+ },
+ {
+  "cat": "配管",
+  "q": "{排水管|はいすいかん}を{施工|せこう}するときに{大切|たいせつ}なことはどれか。",
+  "o": [
+   "{水|みず}が{自然|しぜん}に{流|なが}れるように{!勾配|こうばい}をつける",
+   "{水平|すいへい}にまっすぐ{取|と}り{付|つ}ける",
+   "{上|うえ}に{向|む}かって{勾配|こうばい}をつける",
+   "{継手|つぎて}を{接着|せっちゃく}しない"
+  ],
+  "a": 0,
+  "tl": "Ang drain pipe (排水管) ay hindi gumagamit ng pressure. Umaagos ang tubig dahil sa gravity, kaya kailangan itong lagyan ng tamang 勾配 (slope) pababa. Kapag patag o paakyat, maiipon ang tubig at dumi at babara.",
+  "en": "Drain pipes (排水管) carry water by gravity, not pressure, so they need the proper downward slope (勾配). Pipes laid flat or uphill collect water and waste and clog.",
+  "g": [
+   [
+    "排水管",
+    "はいすいかん",
+    "drain pipe"
+   ],
+   [
+    "勾配",
+    "こうばい",
+    "slope"
+   ],
+   [
+    "継手",
+    "つぎて",
+    "fitting, joint"
+   ]
+  ],
+  "tq": {
+   "en": "What is important when installing a drain pipe?",
+   "tl": "Ano ang mahalaga sa pag-install ng drain pipe?"
+  },
+  "to": {
+   "en": [
+    "Give it a slope so water flows naturally",
+    "Install it perfectly level",
+    "Slope it upward",
+    "Don't glue the fittings"
+   ],
+   "tl": [
+    "Lagyan ng slope para kusang umagos ang tubig",
+    "I-install nang ganap na patag",
+    "Lagyan ng slope paakyat",
+    "Huwag idikit ang mga fitting"
+   ]
+  },
+  "lv": "real",
+  "part": "jitsugi",
+  "kubun": "ライフライン・設備"
+ },
+ {
+  "cat": "電気",
+  "q": "{電気|でんき}{設備|せつび}の{作業|さぎょう}を{始|はじ}める{前|まえ}に{必|かなら}ず{行|おこな}うことはどれか。",
+  "o": [
+   "{停電|ていでん}させ、{!検電器|けんでんき}で{電気|でんき}が{来|き}ていないことを{確認|かくにん}する",
+   "{手|て}で{触|さわ}って{確|たし}かめる",
+   "{電気|でんき}が{来|き}ているまま{急|いそ}いで{作業|さぎょう}する",
+   "{確認|かくにん}は{作業|さぎょう}の{後|あと}にする"
+  ],
+  "a": 0,
+  "tl": "Bago magtrabaho sa electrical equipment, patayin muna ang kuryente (停電), tapos gamitin ang 検電器 (voltage tester) para siguraduhing wala nang kuryente. Huwag kailanman hawakan para lang i-check. Maglagay din ng tag na \"Huwag buksan\" sa breaker.",
+  "en": "Before working on electrical equipment, cut the power (停電) and use a voltage tester (検電器) to confirm there is no voltage. Never touch it to check. Also put a \"Do not switch on\" tag on the breaker.",
+  "g": [
+   [
+    "検電器",
+    "けんでんき",
+    "voltage tester"
+   ],
+   [
+    "停電",
+    "ていでん",
+    "power cut"
+   ]
+  ],
+  "tq": {
+   "en": "What must always be done before starting work on electrical equipment?",
+   "tl": "Ano ang dapat laging gawin bago magtrabaho sa electrical equipment?"
+  },
+  "to": {
+   "en": [
+    "Cut the power and confirm with a voltage tester that there is no electricity",
+    "Touch it with your hand to check",
+    "Work quickly with the power still on",
+    "Check only after the work"
+   ],
+   "tl": [
+    "Patayin ang kuryente at i-check sa voltage tester na wala nang kuryente",
+    "Hawakan para i-check",
+    "Magmadaling magtrabaho kahit may kuryente",
+    "I-check lang pagkatapos ng trabaho"
+   ]
+  },
+  "lv": "real",
+  "part": "jitsugi",
+  "kubun": "ライフライン・設備"
+ },
+ {
+  "cat": "電気",
+  "q": "{電気|でんき}{機器|きき}に{!接地|せっち}（アース）をとる{主|おも}な{目的|もくてき}はどれか。",
+  "o": [
+   "{漏電|ろうでん}したときの{感電|かんでん}を{防|ふせ}ぐ",
+   "{電気代|でんきだい}を{安|やす}くする",
+   "{機器|きき}を{軽|かる}くする",
+   "{音|おと}を{大|おお}きくする"
+  ],
+  "a": 0,
+  "tl": "Ang 接地 (grounding / earth) ay nagdudugtong ng metal na bahagi ng makina sa lupa. Kapag may 漏電 (current leakage), dadaloy ang kuryente sa lupa imbes na sa katawan mo, kaya naiiwasan ang 感電 (electric shock).",
+  "en": "Grounding (接地, earth) connects the metal parts of equipment to the ground. If current leaks (漏電), it flows to the ground instead of through your body, preventing electric shock (感電).",
+  "g": [
+   [
+    "接地",
+    "せっち",
+    "grounding, earth"
+   ],
+   [
+    "漏電",
+    "ろうでん",
+    "current leakage"
+   ],
+   [
+    "感電",
+    "かんでん",
+    "electric shock"
+   ]
+  ],
+  "tq": {
+   "en": "What is the main purpose of grounding (earthing) electrical equipment?",
+   "tl": "Ano ang main purpose ng grounding (earth) ng electrical equipment?"
+  },
+  "to": {
+   "en": [
+    "To prevent electric shock when current leaks",
+    "To lower the electricity bill",
+    "To make the equipment lighter",
+    "To make it louder"
+   ],
+   "tl": [
+    "Para maiwasan ang electric shock kapag may leakage",
+    "Para bumaba ang bayad sa kuryente",
+    "Para gumaan ang makina",
+    "Para lumakas ang tunog"
+   ]
+  },
+  "lv": "real",
+  "part": "jitsugi",
+  "kubun": "ライフライン・設備"
+ },
+ {
+  "cat": "空調",
+  "q": "{空調|くうちょう}{設備|せつび}で、{室外機|しつがいき}と{室内機|しつないき}をつなぐ{配管|はいかん}の{中|なか}を{流|なが}れるものはどれか。",
+  "o": [
+   "{!冷媒|れいばい}",
+   "{排水|はいすい}",
+   "ガス{燃料|ねんりょう}",
+   "{温水|おんすい}だけ"
+  ],
+  "a": 0,
+  "tl": "Sa aircon, dumadaloy sa 冷媒配管 (refrigerant pipe) sa pagitan ng outdoor unit at indoor unit ang 冷媒 (refrigerant), na nagdadala ng init. Kapag may tagas, hihina ang lamig, kaya chine-check ito sa pressure test.",
+  "en": "In air conditioning, refrigerant (冷媒) flows through the pipes between the outdoor and indoor units and carries the heat. A leak weakens cooling, so the pipes are pressure-tested.",
+  "g": [
+   [
+    "冷媒",
+    "れいばい",
+    "refrigerant"
+   ],
+   [
+    "室外機",
+    "しつがいき",
+    "outdoor unit"
+   ],
+   [
+    "室内機",
+    "しつないき",
+    "indoor unit"
+   ]
+  ],
+  "tq": {
+   "en": "In an air-conditioning system, what flows through the pipes connecting the outdoor and indoor units?",
+   "tl": "Sa aircon system, ano ang dumadaloy sa pipe na nagdudugtong sa outdoor at indoor unit?"
+  },
+  "to": {
+   "en": [
+    "Refrigerant",
+    "Drain water",
+    "Gas fuel",
+    "Only hot water"
+   ],
+   "tl": [
+    "Refrigerant",
+    "Drain water",
+    "Gas fuel",
+    "Hot water lang"
+   ]
+  },
+  "lv": "real",
+  "part": "jitsugi",
+  "kubun": "ライフライン・設備"
+ },
+ {
+  "cat": "配管",
+  "q": "{給水管|きゅうすいかん}の{配管|はいかん}が{終|お}わった{後|あと}、{漏|も}れがないか{確|たし}かめるために{行|おこな}う{試験|しけん}はどれか。",
+  "o": [
+   "{!水圧試験|すいあつしけん}",
+   "スランプ{試験|しけん}",
+   "{絶縁抵抗測定|ぜつえんていこうそくてい}",
+   "{騒音測定|そうおんそくてい}"
+  ],
+  "a": 0,
+  "tl": "Pagkatapos ikabit ang 給水管 (water supply pipe), ginagawa ang 水圧試験 (water pressure test): nilalagyan ng pressure ang pipe nang ilang oras para makita kung may tagas, bago takpan ng pader o kisame.",
+  "en": "After installing water supply pipes (給水管), a water pressure test (水圧試験) is done: the pipe is held under pressure for a set time to find leaks before walls or ceilings cover it.",
+  "g": [
+   [
+    "給水管",
+    "きゅうすいかん",
+    "water supply pipe"
+   ],
+   [
+    "水圧試験",
+    "すいあつしけん",
+    "water pressure test"
+   ],
+   [
+    "漏れ",
+    "もれ",
+    "leak"
+   ]
+  ],
+  "tq": {
+   "en": "After installing water supply piping, which test checks for leaks?",
+   "tl": "Pagkatapos ikabit ang water supply pipe, aling test ang tumitingin kung may tagas?"
+  },
+  "to": {
+   "en": [
+    "Water pressure test",
+    "Slump test",
+    "Insulation resistance measurement",
+    "Noise measurement"
+   ],
+   "tl": [
+    "Water pressure test",
+    "Slump test",
+    "Insulation resistance measurement",
+    "Noise measurement"
+   ]
+  },
+  "lv": "real",
+  "part": "jitsugi",
+  "kubun": "ライフライン・設備"
+ },
+ {
+  "cat": "配管",
+  "q": "{冷水管|れいすいかん}などの{配管|はいかん}に{!保温材|ほおんざい}を{巻|ま}く{主|おも}な{理由|りゆう}はどれか。",
+  "o": [
+   "{熱|ねつ}が{逃|に}げるのを{防|ふせ}ぎ、{結露|けつろ}を{防|ふせ}ぐ",
+   "{配管|はいかん}を{重|おも}くする",
+   "{見|み}た{目|め}を{派手|はで}にする",
+   "{水|みず}の{量|りょう}を{増|ふ}やす"
+  ],
+  "a": 0,
+  "tl": "Binabalutan ng 保温材 (insulation) ang pipe para hindi lumabas o pumasok ang init. Sa malamig na pipe, pinipigilan din nito ang 結露 (condensation), na puwedeng tumulo at makasira ng kisame.",
+  "en": "Pipes are wrapped in insulation (保温材) to stop heat from escaping or entering. On cold pipes it also prevents condensation (結露), which can drip and damage ceilings.",
+  "g": [
+   [
+    "保温材",
+    "ほおんざい",
+    "insulation material"
+   ],
+   [
+    "結露",
+    "けつろ",
+    "condensation"
+   ]
+  ],
+  "tq": {
+   "en": "What is the main reason for wrapping insulation around pipes such as chilled water pipes?",
+   "tl": "Ano ang main reason ng pagbalot ng insulation sa pipe gaya ng chilled water pipe?"
+  },
+  "to": {
+   "en": [
+    "To stop heat loss and prevent condensation",
+    "To make the pipe heavier",
+    "To make it look flashy",
+    "To increase the amount of water"
+   ],
+   "tl": [
+    "Para hindi lumabas ang init at maiwasan ang condensation",
+    "Para bumigat ang pipe",
+    "Para magmukhang makulay",
+    "Para dumami ang tubig"
+   ]
+  },
+  "lv": "real",
+  "part": "jitsugi",
+  "kubun": "ライフライン・設備"
  }
 ];

@@ -1,5 +1,5 @@
 // SSW2 REVIEWER service worker: works offline after the first visit.
-const CACHE = "ssw2-reviewer-v2";
+const CACHE = "ssw2-reviewer-v3";
 const CORE = ["/", "/index.html", "/questions.js", "/manifest.webmanifest", "/icons/icon-192.png", "/icons/icon-512.png"];
 
 self.addEventListener("install", e => {
