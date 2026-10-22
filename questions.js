@@ -1,7 +1,7 @@
 // SSW2 REVIEWER question bank (construction). All questions are original.
 // Ruby markup: {base|reading} shows furigana at level 0; {!base|reading} also at level 1 (hard words).
 // lv: basic | real (exam level). part: gakka (written) | jitsugi (practical, with kubun).
-const BANK = [
+const BANK=[
  {
   "cat": "職長の役割",
   "q": "{作業|さぎょう}{中|ちゅう}に、{!図面|ずめん}と{現場|げんば}が{違|ちが}うことに{気|き}づいた。{!職長|しょくちょう}として{最初|さいしょ}にすることはどれか。",
@@ -1475,7 +1475,8 @@ const BANK = [
    ]
   },
   "lv": "real",
-  "part": "gakka"
+  "part": "gakka",
+  "ref": "職長テキスト 5.3"
  },
  {
   "cat": "法令・役割",
@@ -1520,57 +1521,8 @@ const BANK = [
    ]
   },
   "lv": "real",
-  "part": "gakka"
- },
- {
-  "cat": "法令・役割",
-  "q": "{請負契約|うけおいけいやく}にもとづき、{受注者|じゅちゅうしゃ}の{代理|だいり}として{工事現場|こうじげんば}を{運営|うんえい}・{取|と}り{締|し}まる{人|ひと}はどれか。",
-  "o": [
-   "{!現場代理人|げんばだいりにん}",
-   "{発注者|はっちゅうしゃ}",
-   "{作業員|さぎょういん}",
-   "{設計者|せっけいしゃ}"
-  ],
-  "a": 0,
-  "tl": "Ang 現場代理人 (site agent) ay ang representative ng contractor (受注者) sa site. Siya ang namamahala at nagpapatakbo ng site base sa contract. Sa maliit na site, puwedeng iisang tao ang 現場代理人 at 主任技術者.",
-  "en": "The site agent (現場代理人) represents the contractor (受注者) on site and runs and controls the site under the contract. On small sites one person may serve as both site agent and chief engineer.",
-  "g": [
-   [
-    "現場代理人",
-    "げんばだいりにん",
-    "site agent"
-   ],
-   [
-    "受注者",
-    "じゅちゅうしゃ",
-    "contractor (the one who receives the order)"
-   ],
-   [
-    "請負契約",
-    "うけおいけいやく",
-    "construction contract"
-   ]
-  ],
-  "tq": {
-   "en": "Under the contract, who runs and controls the site as the contractor's representative?",
-   "tl": "Base sa contract, sino ang nagpapatakbo ng site bilang representative ng contractor?"
-  },
-  "to": {
-   "en": [
-    "Site agent (genba dairinin)",
-    "Client (hacchūsha)",
-    "Worker",
-    "Designer"
-   ],
-   "tl": [
-    "Site agent (genba dairinin)",
-    "Client (hacchūsha)",
-    "Worker",
-    "Designer"
-   ]
-  },
-  "lv": "real",
-  "part": "gakka"
+  "part": "gakka",
+  "ref": "職長テキスト 5.3"
  },
  {
   "cat": "法令・役割",
@@ -1620,107 +1572,8 @@ const BANK = [
    ]
   },
   "lv": "real",
-  "part": "gakka"
- },
- {
-  "cat": "法令・役割",
-  "q": "{型枠支保工|かたわくしほこう}の{組立|くみた}てなど、{法律|ほうりつ}で{決|き}められた{危険|きけん}な{作業|さぎょう}で、{作業|さぎょう}を{直接|ちょくせつ}{指揮|しき}するために{選|えら}ばれる{人|ひと}はどれか。",
-  "o": [
-   "{!作業主任者|さぎょうしゅにんしゃ}",
-   "{現場代理人|げんばだいりにん}",
-   "{発注者|はっちゅうしゃ}",
-   "{設計者|せっけいしゃ}"
-  ],
-  "a": 0,
-  "tl": "Sa mga delikadong trabaho na nakasaad sa batas, gaya ng pag-assemble ng 型枠支保工 (formwork shoring), kailangang pumili ng 作業主任者 (operations chief) na may tamang qualification. Siya ang direktang nag-uutos at nagbabantay sa trabaho.",
-  "en": "For dangerous work set by law, such as assembling formwork shoring (型枠支保工), an operations chief (作業主任者) with the proper qualification must be appointed to direct the work in person.",
-  "g": [
-   [
-    "作業主任者",
-    "さぎょうしゅにんしゃ",
-    "operations chief"
-   ],
-   [
-    "型枠支保工",
-    "かたわくしほこう",
-    "formwork shoring"
-   ],
-   [
-    "指揮",
-    "しき",
-    "direct, command"
-   ]
-  ],
-  "tq": {
-   "en": "For dangerous work set by law, such as assembling formwork shoring, who is appointed to direct the work in person?",
-   "tl": "Sa delikadong trabahong nakasaad sa batas, gaya ng pag-assemble ng formwork shoring, sino ang pinipili para direktang mag-utos sa trabaho?"
-  },
-  "to": {
-   "en": [
-    "Operations chief (sagyō shuninsha)",
-    "Site agent",
-    "Client",
-    "Designer"
-   ],
-   "tl": [
-    "Operations chief (sagyō shuninsha)",
-    "Site agent",
-    "Client",
-    "Designer"
-   ]
-  },
-  "lv": "real",
-  "part": "gakka"
- },
- {
-  "cat": "法令・役割",
-  "q": "つり{上|あ}げ{荷重|かじゅう}1トン{以上|いじょう}のクレーンで{!玉掛|たまか}けをするために{必要|ひつよう}なものはどれか。",
-  "o": [
-   "{玉掛|たまか}け{!技能講習|ぎのうこうしゅう}の{修了|しゅうりょう}",
-   "{運転免許証|うんてんめんきょしょう}だけ",
-   "{職長|しょくちょう}の{許可|きょか}だけ",
-   "{特別|とくべつ}なものは{必要|ひつよう}ない"
-  ],
-  "a": 0,
-  "tl": "Para sa 玉掛け (slinging) sa crane na 1 ton pataas ang lifting capacity, kailangan mong natapos ang 玉掛け技能講習 (slinging skill training). Kung mas mababa sa 1 ton, special training (特別教育) ang kailangan.",
-  "en": "Slinging (玉掛け) for a crane with a lifting capacity of 1 ton or more requires completing the slinging skill training (技能講習). Below 1 ton, special training (特別教育) is required.",
-  "g": [
-   [
-    "玉掛け",
-    "たまかけ",
-    "slinging"
-   ],
-   [
-    "技能講習",
-    "ぎのうこうしゅう",
-    "skill training course"
-   ],
-   [
-    "荷重",
-    "かじゅう",
-    "load"
-   ]
-  ],
-  "tq": {
-   "en": "What is required to do slinging on a crane with a lifting capacity of 1 ton or more?",
-   "tl": "Ano ang kailangan para mag-slinging sa crane na 1 ton pataas ang lifting capacity?"
-  },
-  "to": {
-   "en": [
-    "Completion of the slinging skill training",
-    "Only a driver's license",
-    "Only the foreman's permission",
-    "Nothing special is required"
-   ],
-   "tl": [
-    "Natapos ang slinging skill training",
-    "Driver's license lang",
-    "Permiso lang ng foreman",
-    "Walang espesyal na kailangan"
-   ]
-  },
-  "lv": "real",
-  "part": "gakka"
+  "part": "gakka",
+  "ref": "職長テキスト 3.2"
  },
  {
   "cat": "安全衛生",
@@ -1770,7 +1623,8 @@ const BANK = [
    ]
   },
   "lv": "real",
-  "part": "gakka"
+  "part": "gakka",
+  "ref": "職長テキスト 3.2"
  },
  {
   "cat": "安全衛生",
@@ -1820,7 +1674,8 @@ const BANK = [
    ]
   },
   "lv": "real",
-  "part": "gakka"
+  "part": "gakka",
+  "ref": "職長テキスト 3.2"
  },
  {
   "cat": "施工知識",
@@ -1867,56 +1722,6 @@ const BANK = [
     "Cast-in-place concrete pile",
     "Batter board (chōhari)",
     "Earth retaining (dodome)"
-   ]
-  },
-  "lv": "real",
-  "part": "gakka"
- },
- {
-  "cat": "施工知識",
-  "q": "{!浚渫|しゅんせつ}{工事|こうじ}の{説明|せつめい}として{正|ただ}しいものはどれか。",
-  "o": [
-   "{川|かわ}や{港|みなと}の{水底|みなそこ}の{土砂|どしゃ}を{掘|ほ}って{取|と}り{除|のぞ}く",
-   "{建物|たてもの}の{屋根|やね}をつくる",
-   "{道路|どうろ}に{白線|はくせん}を{引|ひ}く",
-   "{電線|でんせん}を{地中|ちちゅう}に{埋|う}める"
-  ],
-  "a": 0,
-  "tl": "Ang 浚渫 (dredging) ay paghukay at pagtanggal ng lupa at buhangin sa ilalim ng ilog o pantalan, para lumalim ang tubig at makadaan ang barko o umagos nang maayos ang tubig.",
-  "en": "Dredging (浚渫) means digging up and removing soil and sand from the bottom of rivers or harbors, to deepen the water for ships or to keep water flowing.",
-  "g": [
-   [
-    "浚渫",
-    "しゅんせつ",
-    "dredging"
-   ],
-   [
-    "土砂",
-    "どしゃ",
-    "soil and sand"
-   ],
-   [
-    "水底",
-    "みなそこ",
-    "bottom of the water"
-   ]
-  ],
-  "tq": {
-   "en": "Which correctly describes dredging work?",
-   "tl": "Alin ang tamang paliwanag ng dredging work?"
-  },
-  "to": {
-   "en": [
-    "Digging up and removing soil and sand from the bottom of rivers or harbors",
-    "Building the roof of a building",
-    "Painting white lines on roads",
-    "Burying electric cables underground"
-   ],
-   "tl": [
-    "Paghukay at pagtanggal ng lupa at buhangin sa ilalim ng ilog o pantalan",
-    "Paggawa ng bubong ng building",
-    "Pagpinta ng white line sa kalsada",
-    "Pagbaon ng kable ng kuryente sa ilalim ng lupa"
    ]
   },
   "lv": "real",
@@ -1974,106 +1779,6 @@ const BANK = [
  },
  {
   "cat": "施工知識",
-  "q": "{鉄筋|てっきん}コンクリートの「{!かぶり厚|かぶりあつ}さ」を{確保|かくほ}する{主|おも}な{目的|もくてき}はどれか。",
-  "o": [
-   "{鉄筋|てっきん}がさびるのを{防|ふせ}ぎ、{火災|かさい}から{守|まも}る",
-   "コンクリートの{色|いろ}をきれいにする",
-   "{工事|こうじ}を{早|はや}く{終|お}わらせる",
-   "{材料費|ざいりょうひ}を{減|へ}らす"
-  ],
-  "a": 0,
-  "tl": "Ang かぶり厚さ (concrete cover) ay ang kapal ng concrete na tumatakip sa rebar. Pinoprotektahan nito ang rebar laban sa kalawang at sunog, at tumutulong para kumapit nang maayos ang concrete sa rebar.",
-  "en": "Concrete cover (かぶり厚さ) is the thickness of concrete over the rebar. It protects the rebar from rust and fire and helps the concrete bond to the rebar.",
-  "g": [
-   [
-    "かぶり厚さ",
-    "かぶりあつさ",
-    "concrete cover"
-   ],
-   [
-    "鉄筋",
-    "てっきん",
-    "rebar"
-   ],
-   [
-    "火災",
-    "かさい",
-    "fire"
-   ]
-  ],
-  "tq": {
-   "en": "What is the main purpose of keeping the proper concrete cover in reinforced concrete?",
-   "tl": "Ano ang main purpose ng tamang concrete cover sa reinforced concrete?"
-  },
-  "to": {
-   "en": [
-    "To stop the rebar from rusting and protect it from fire",
-    "To make the concrete color nicer",
-    "To finish the work faster",
-    "To reduce material costs"
-   ],
-   "tl": [
-    "Para hindi kalawangin ang rebar at maprotektahan sa sunog",
-    "Para gumanda ang kulay ng concrete",
-    "Para matapos agad ang trabaho",
-    "Para bumaba ang gastos sa materyales"
-   ]
-  },
-  "lv": "real",
-  "part": "gakka"
- },
- {
-  "cat": "施工知識",
-  "q": "{!盛土|もりど}を{作|つく}るときの{正|ただ}しい{方法|ほうほう}はどれか。",
-  "o": [
-   "{土|つち}を{薄|うす}く{何層|なんそう}にも{分|わ}けて、そのたびに{締|し}め{固|かた}める",
-   "{一度|いちど}に{厚|あつ}く{盛|も}ってから{最後|さいご}に{締|し}め{固|かた}める",
-   "{締|し}め{固|かた}めずに{自然|しぜん}に{沈|しず}むのを{待|ま}つ",
-   "{雨|あめ}の{日|ひ}に{水|みず}を{含|ふく}ませて{盛|も}る"
-  ],
-  "a": 0,
-  "tl": "Sa 盛土 (embankment), ilagay ang lupa nang manipis na layer, tapos i-compact (締め固め) bawat layer bago maglagay ng susunod. Kapag makapal ang inilagay nang isang beses, hindi masisiksik ang ilalim at puwedeng lumubog o gumuho.",
-  "en": "For an embankment (盛土), spread the soil in thin layers and compact (締め固め) each layer before adding the next. A thick layer placed at once cannot be compacted at the bottom and may settle or collapse.",
-  "g": [
-   [
-    "盛土",
-    "もりど",
-    "embankment, fill"
-   ],
-   [
-    "締め固め",
-    "しめかため",
-    "compaction"
-   ],
-   [
-    "層",
-    "そう",
-    "layer"
-   ]
-  ],
-  "tq": {
-   "en": "Which is the correct way to build an embankment?",
-   "tl": "Alin ang tamang paraan ng paggawa ng embankment?"
-  },
-  "to": {
-   "en": [
-    "Spread soil in many thin layers and compact each one",
-    "Pile it thick at once and compact only at the end",
-    "Don't compact it and wait for it to settle naturally",
-    "Soak it with water on a rainy day and pile it"
-   ],
-   "tl": [
-    "Ilagay nang manipis na layer at i-compact bawat isa",
-    "Ilagay nang makapal nang isang beses at i-compact sa dulo lang",
-    "Huwag i-compact at hintaying lumubog nang kusa",
-    "Basain sa ulan bago ilagay"
-   ]
-  },
-  "lv": "real",
-  "part": "gakka"
- },
- {
-  "cat": "施工知識",
   "q": "{地震|じしん}の{揺|ゆ}れを、{建物|たてもの}の{中|なか}に{設|もう}けたダンパーなどで{吸収|きゅうしゅう}して{小|ちい}さくする{構造|こうぞう}を{何|なん}というか。",
   "o": [
    "{!制振|せいしん}{構造|こうぞう}",
@@ -2117,56 +1822,6 @@ const BANK = [
     "Base isolation structure (menshin)",
     "Temporary structure",
     "Wooden building"
-   ]
-  },
-  "lv": "real",
-  "part": "gakka"
- },
- {
-  "cat": "施工知識",
-  "q": "{!型枠支保工|かたわくしほこう}の{説明|せつめい}として{正|ただ}しいものはどれか。",
-  "o": [
-   "コンクリートを{打|う}つとき、{型枠|かたわく}を{支|ささ}える{仮設|かせつ}の{支柱|しちゅう}など",
-   "{完成|かんせい}した{建物|たてもの}の{柱|はしら}",
-   "{地面|じめん}を{掘|ほ}る{機械|きかい}",
-   "{鉄筋|てっきん}をつなぐ{部品|ぶひん}"
-  ],
-  "a": 0,
-  "tl": "Ang 型枠支保工 (formwork shoring) ay mga pansamantalang poste at beam na sumusuporta sa formwork habang binubuhusan at pinapatigas ang concrete. Kapag bumigay ito, malaking aksidente, kaya may 作業主任者 na nagbabantay sa pag-assemble.",
-  "en": "Formwork shoring (型枠支保工) is the temporary posts and beams that hold up the formwork while concrete is poured and cures. A collapse causes serious accidents, so an operations chief supervises its assembly.",
-  "g": [
-   [
-    "型枠支保工",
-    "かたわくしほこう",
-    "formwork shoring"
-   ],
-   [
-    "型枠",
-    "かたわく",
-    "formwork"
-   ],
-   [
-    "仮設",
-    "かせつ",
-    "temporary"
-   ]
-  ],
-  "tq": {
-   "en": "Which correctly describes formwork shoring?",
-   "tl": "Alin ang tamang paliwanag ng formwork shoring?"
-  },
-  "to": {
-   "en": [
-    "Temporary posts and supports that hold up the formwork when pouring concrete",
-    "The columns of the finished building",
-    "A machine for digging the ground",
-    "A part that joins rebar"
-   ],
-   "tl": [
-    "Pansamantalang poste at suporta ng formwork habang nagbubuhos ng concrete",
-    "Mga poste ng tapos na building",
-    "Makina sa paghukay ng lupa",
-    "Piyesa na nagdudugtong ng rebar"
    ]
   },
   "lv": "real",
@@ -3074,5 +2729,816 @@ const BANK = [
   "lv": "real",
   "part": "jitsugi",
   "kubun": "ライフライン・設備"
+ },
+ {
+  "cat": "安全衛生",
+  "q": "KY{活動|かつどう}の「4ラウンド{法|ほう}」の{正|ただ}しい{順番|じゅんばん}はどれか。",
+  "o": [
+   "{現状把握|げんじょうはあく}→{本質追究|ほんしつついきゅう}→{対策樹立|たいさくじゅりつ}→{目標設定|もくひょうせってい}",
+   "{本質追究|ほんしつついきゅう}→{現状把握|げんじょうはあく}→{目標設定|もくひょうせってい}→{対策樹立|たいさくじゅりつ}",
+   "{現状把握|げんじょうはあく}→{対策樹立|たいさくじゅりつ}→{本質追究|ほんしつついきゅう}→{目標設定|もくひょうせってい}",
+   "{目標設定|もくひょうせってい}→{現状把握|げんじょうはあく}→{本質追究|ほんしつついきゅう}→{対策樹立|たいさくじゅりつ}"
+  ],
+  "a": 0,
+  "tl": "Ang KY 4-round method: 1R 現状把握 (alamin ang mga panganib sa sitwasyon), 2R 本質追究 (piliin ang pinakamahalagang panganib), 3R 対策樹立 (mag-isip ng countermeasure), 4R 目標設定 (pagpasyahan ang action target ng team at sabihin nang sabay-sabay).",
+  "en": "The KY 4-round method: round 1 現状把握 (find the hazards in the situation), round 2 本質追究 (pick the most important hazard), round 3 対策樹立 (think of countermeasures), round 4 目標設定 (decide the team's action target and call it out together).",
+  "g": [
+   [
+    "現状把握",
+    "げんじょうはあく",
+    "grasp the current situation"
+   ],
+   [
+    "本質追究",
+    "ほんしつついきゅう",
+    "dig into the essential point"
+   ],
+   [
+    "対策樹立",
+    "たいさくじゅりつ",
+    "set countermeasures"
+   ],
+   [
+    "目標設定",
+    "もくひょうせってい",
+    "set the target"
+   ]
+  ],
+  "tq": {
+   "en": "What is the correct order of the KY \"4-round method\"?",
+   "tl": "Ano ang tamang pagkakasunod-sunod ng KY \"4-round method\"?"
+  },
+  "to": {
+   "en": [
+    "Grasp situation → Find the key point → Set countermeasures → Set target",
+    "Find the key point → Grasp situation → Set target → Set countermeasures",
+    "Grasp situation → Set countermeasures → Find the key point → Set target",
+    "Set target → Grasp situation → Find the key point → Set countermeasures"
+   ],
+   "tl": [
+    "Alamin ang sitwasyon → Hanapin ang pinakamahalaga → Countermeasure → Target",
+    "Hanapin ang pinakamahalaga → Alamin ang sitwasyon → Target → Countermeasure",
+    "Alamin ang sitwasyon → Countermeasure → Hanapin ang pinakamahalaga → Target",
+    "Target → Alamin ang sitwasyon → Hanapin ang pinakamahalaga → Countermeasure"
+   ]
+  },
+  "lv": "real",
+  "part": "gakka",
+  "ref": "職長テキスト 3.5.2"
+ },
+ {
+  "cat": "安全衛生",
+  "q": "「ハインリッヒの{法則|ほうそく}」で、1{件|けん}の{重大|じゅうだい}な{事故|じこ}の{裏|うら}にあるとされる{軽微|けいび}な{事故|じこ}とヒヤリ・ハットの{数|かず}の{組|く}み{合|あ}わせはどれか。",
+  "o": [
+   "{軽微|けいび}な{事故|じこ} 29{件|けん}、ヒヤリ・ハット 300{件|けん}",
+   "{軽微|けいび}な{事故|じこ} 10{件|けん}、ヒヤリ・ハット 100{件|けん}",
+   "{軽微|けいび}な{事故|じこ} 30{件|けん}、ヒヤリ・ハット 1,000{件|けん}",
+   "{軽微|けいび}な{事故|じこ} 300{件|けん}、ヒヤリ・ハット 29{件|けん}"
+  ],
+  "a": 0,
+  "tl": "Ayon sa Heinrich's law (ハインリッヒの法則), sa likod ng 1 malaking aksidente ay may 29 maliit na aksidente at 300 near miss (ヒヤリ・ハット). Kaya kapag binawasan ang mga near miss, nababawasan din ang malalaking aksidente.",
+  "en": "Heinrich's law (ハインリッヒの法則) says that behind 1 serious accident there are 29 minor accidents and 300 near misses (ヒヤリ・ハット). Reducing near misses reduces serious accidents.",
+  "g": [
+   [
+    "法則",
+    "ほうそく",
+    "law, rule"
+   ],
+   [
+    "重大",
+    "じゅうだい",
+    "serious"
+   ],
+   [
+    "軽微",
+    "けいび",
+    "minor"
+   ]
+  ],
+  "tq": {
+   "en": "In \"Heinrich's law\", how many minor accidents and near misses are said to be behind 1 serious accident?",
+   "tl": "Sa \"Heinrich's law\", ilang minor accident at near miss ang sinasabing nasa likod ng 1 seryosong aksidente?"
+  },
+  "to": {
+   "en": [
+    "29 minor accidents, 300 near misses",
+    "10 minor accidents, 100 near misses",
+    "30 minor accidents, 1,000 near misses",
+    "300 minor accidents, 29 near misses"
+   ],
+   "tl": [
+    "29 minor accident, 300 near miss",
+    "10 minor accident, 100 near miss",
+    "30 minor accident, 1,000 near miss",
+    "300 minor accident, 29 near miss"
+   ]
+  },
+  "lv": "real",
+  "part": "gakka",
+  "ref": "職長テキスト 3.5.3"
+ },
+ {
+  "cat": "安全衛生",
+  "q": "リスクアセスメントで、リスクを{減|へ}らす{対策|たいさく}の{優先順位|ゆうせんじゅんい}として{正|ただ}しいものはどれか。",
+  "o": [
+   "{危険|きけん}な{作業|さぎょう}の{廃止|はいし}・{変更|へんこう}→{安全装置|あんぜんそうち}などの{設備|せつび}{対策|たいさく}→{教育|きょういく}・{手順|てじゅん}などの{管理的|かんりてき}{対策|たいさく}→{個人用保護具|こじんようほごぐ}",
+   "{個人用保護具|こじんようほごぐ}→{管理的|かんりてき}{対策|たいさく}→{設備|せつび}{対策|たいさく}→{作業|さぎょう}の{廃止|はいし}・{変更|へんこう}",
+   "{管理的|かんりてき}{対策|たいさく}→{個人用保護具|こじんようほごぐ}→{作業|さぎょう}の{廃止|はいし}・{変更|へんこう}→{設備|せつび}{対策|たいさく}",
+   "{設備|せつび}{対策|たいさく}→{作業|さぎょう}の{廃止|はいし}・{変更|へんこう}→{個人用保護具|こじんようほごぐ}→{管理的|かんりてき}{対策|たいさく}"
+  ],
+  "a": 0,
+  "tl": "Ang tamang priority: (1) alisin o baguhin ang delikadong trabaho mismo, (2) engineering measures gaya ng guard at safety device, (3) administrative measures gaya ng training, procedure, at Keep Out sign, (4) personal protective equipment (個人用保護具). Ang protective gear ay huling depensa, hindi una.",
+  "en": "The correct priority is: (1) eliminate or change the dangerous work itself, (2) engineering measures such as guards and safety devices, (3) administrative measures such as training, procedures and no-entry signs, (4) personal protective equipment (個人用保護具). Protective gear is the last line of defense, not the first.",
+  "g": [
+   [
+    "優先順位",
+    "ゆうせんじゅんい",
+    "order of priority"
+   ],
+   [
+    "管理的対策",
+    "かんりてきたいさく",
+    "administrative measures"
+   ],
+   [
+    "個人用保護具",
+    "こじんようほごぐ",
+    "personal protective equipment"
+   ]
+  ],
+  "tq": {
+   "en": "In a risk assessment, which is the correct order of priority for risk-reduction measures?",
+   "tl": "Sa risk assessment, alin ang tamang priority ng mga countermeasure para bawasan ang risk?"
+  },
+  "to": {
+   "en": [
+    "Eliminate/change the dangerous work → Engineering measures (safety devices) → Administrative measures (training, procedures) → Personal protective equipment",
+    "PPE → Administrative → Engineering → Eliminate/change the work",
+    "Administrative → PPE → Eliminate/change the work → Engineering",
+    "Engineering → Eliminate/change the work → PPE → Administrative"
+   ],
+   "tl": [
+    "Alisin/baguhin ang delikadong trabaho → Engineering (safety device) → Administrative (training, procedure) → PPE",
+    "PPE → Administrative → Engineering → Alisin/baguhin ang trabaho",
+    "Administrative → PPE → Alisin/baguhin ang trabaho → Engineering",
+    "Engineering → Alisin/baguhin ang trabaho → PPE → Administrative"
+   ]
+  },
+  "lv": "real",
+  "part": "gakka",
+  "ref": "職長テキスト 3.4.5"
+ },
+ {
+  "cat": "安全衛生",
+  "q": "5Sのうち「{!整頓|せいとん}」の{説明|せつめい}として{正|ただ}しいものはどれか。",
+  "o": [
+   "{必要|ひつよう}なものを、{決|き}められた{場所|ばしょ}に、すぐ{取|と}り{出|だ}せるように{置|お}く",
+   "{要|い}るものと{要|い}らないものを{分|わ}けて、{要|い}らないものを{処分|しょぶん}する",
+   "ごみや{汚|よご}れを{取|と}り{除|のぞ}き、{点検|てんけん}しながらきれいにする",
+   "きれいな{状態|じょうたい}を{保|たも}ち{続|つづ}ける"
+  ],
+  "a": 0,
+  "tl": "Madalas magkapalit ang 整理 at 整頓. Ang 整理 (sort) ay paghiwalayin ang kailangan at hindi kailangan, at itapon ang hindi kailangan. Ang 整頓 (set in order) ay ilagay ang mga kailangan sa takdang lugar para madaling makuha. Ang 清掃 ay paglilinis, at ang 清潔 ay pagpapanatili ng kalinisan.",
+  "en": "整理 and 整頓 are often mixed up. 整理 (sort) means separating what is needed from what is not and disposing of the rest. 整頓 (set in order) means putting needed items in set places so they can be taken out at once. 清掃 is cleaning, and 清潔 is keeping it clean.",
+  "g": [
+   [
+    "整頓",
+    "せいとん",
+    "set in order"
+   ],
+   [
+    "整理",
+    "せいり",
+    "sort"
+   ],
+   [
+    "処分",
+    "しょぶん",
+    "dispose of"
+   ]
+  ],
+  "tq": {
+   "en": "Which correctly describes \"seiton\" (set in order) in 5S?",
+   "tl": "Alin ang tamang paliwanag ng \"seiton\" (set in order) sa 5S?"
+  },
+  "to": {
+   "en": [
+    "Put needed items in set places so they can be taken out right away",
+    "Separate needed and unneeded items and dispose of the unneeded ones",
+    "Remove dirt and garbage, cleaning while inspecting",
+    "Keep the clean condition going"
+   ],
+   "tl": [
+    "Ilagay ang kailangan sa takdang lugar para madaling makuha",
+    "Paghiwalayin ang kailangan at hindi kailangan, at itapon ang hindi kailangan",
+    "Tanggalin ang dumi at basura habang nag-iinspeksyon",
+    "Panatilihin ang malinis na kondisyon"
+   ]
+  },
+  "lv": "real",
+  "part": "gakka",
+  "ref": "職長テキスト 3.5.1"
+ },
+ {
+  "cat": "安全衛生",
+  "q": "{労働衛生|ろうどうえいせい}の3{管理|かんり}のうち、「{!作業環境管理|さぎょうかんきょうかんり}」にあたるものはどれか。",
+  "o": [
+   "{局所排気装置|きょくしょはいきそうち}で{粉|ふん}じんを{減|へ}らす",
+   "{作業時間|さぎょうじかん}や{作業姿勢|さぎょうしせい}を{見直|みなお}す",
+   "{定期的|ていきてき}に{健康診断|けんこうしんだん}を{行|おこな}う",
+   "{防|ぼう}じんマスクを{正|ただ}しく{着用|ちゃくよう}させる"
+  ],
+  "a": 0,
+  "tl": "作業環境管理 = ayusin ang hangin at paligid sa workplace (halimbawa, local exhaust para bawasan ang alikabok). 作業管理 = ayusin kung paano ginagawa ang trabaho (oras, posture, paggamit ng mask). 健康管理 = alagaan ang kalusugan ng worker (health check). Kasama sa 作業管理 ang tamang pagsuot ng mask.",
+  "en": "Work environment management (作業環境管理) improves the air and surroundings of the workplace, such as using local exhaust to cut dust. Work management (作業管理) controls how work is done: hours, posture and wearing masks properly. Health management (健康管理) looks after workers' health, such as health checks.",
+  "g": [
+   [
+    "作業環境管理",
+    "さぎょうかんきょうかんり",
+    "work environment management"
+   ],
+   [
+    "局所排気装置",
+    "きょくしょはいきそうち",
+    "local exhaust ventilation"
+   ],
+   [
+    "粉じん",
+    "ふんじん",
+    "dust"
+   ]
+  ],
+  "tq": {
+   "en": "Among the three managements of occupational health, which is \"work environment management\"?",
+   "tl": "Sa 3 management ng occupational health, alin ang \"work environment management\"?"
+  },
+  "to": {
+   "en": [
+    "Reducing dust with a local exhaust system",
+    "Reviewing work hours and work posture",
+    "Doing regular health checks",
+    "Making workers wear dust masks properly"
+   ],
+   "tl": [
+    "Bawasan ang alikabok gamit ang local exhaust",
+    "Ayusin ang oras at posture sa trabaho",
+    "Regular na health check",
+    "Siguraduhing tama ang pagsuot ng dust mask"
+   ]
+  },
+  "lv": "real",
+  "part": "gakka",
+  "ref": "職長テキスト 2.9.2"
+ },
+ {
+  "cat": "安全衛生",
+  "q": "ヒューマンエラーを{防|ふせ}ぐ{考|かんが}え{方|かた}として、{誤|あやま}っているものはどれか。",
+  "o": [
+   "エラーは{本人|ほんにん}の{不注意|ふちゅうい}が{原因|げんいん}なので、{強|つよ}く{叱|しか}れば{防|ふせ}げる",
+   "{作業手順|さぎょうてじゅん}を{分|わ}かりやすくし、{間違|まちが}えにくい{仕組|しく}みにする",
+   "{疲労|ひろう}を{考|かんが}えて、{適切|てきせつ}に{休憩|きゅうけい}を{入|い}れる",
+   "{重要|じゅうよう}な{作業|さぎょう}は{二重|にじゅう}に{確認|かくにん}する"
+  ],
+  "a": 0,
+  "tl": "Ang human error ay nangyayari sa kahit sino, lalo na kapag pagod, nagmamadali, o malabo ang procedure. Hindi ito naaayos ng pagalit lang. Ang tamang paraan: gawing malinaw ang procedure, gumawa ng sistemang mahirap magkamali, magpahinga, at mag-double check.",
+  "en": "Human error can happen to anyone, especially when tired, rushed or when the procedure is unclear. Scolding does not fix it. The right approach is clear procedures, systems that make mistakes hard, proper breaks and double checks.",
+  "g": [
+   [
+    "不注意",
+    "ふちゅうい",
+    "carelessness"
+   ],
+   [
+    "疲労",
+    "ひろう",
+    "fatigue"
+   ],
+   [
+    "二重確認",
+    "にじゅうかくにん",
+    "double check"
+   ]
+  ],
+  "tq": {
+   "en": "Which way of thinking about preventing human error is WRONG?",
+   "tl": "Aling pananaw sa pag-iwas sa human error ang MALI?"
+  },
+  "to": {
+   "en": [
+    "Errors come from the person's carelessness, so scolding them strongly will prevent them",
+    "Make work procedures easy to understand and build systems that make mistakes hard",
+    "Consider fatigue and give proper breaks",
+    "Double-check important work"
+   ],
+   "tl": [
+    "Ang error ay dahil sa kapabayaan ng tao, kaya mapipigilan ito kapag pinagalitan nang matindi",
+    "Gawing malinaw ang procedure at gumawa ng sistemang mahirap magkamali",
+    "Isipin ang pagod at magbigay ng tamang break",
+    "I-double check ang mahalagang trabaho"
+   ]
+  },
+  "lv": "real",
+  "part": "gakka",
+  "ref": "職長テキスト 3.6"
+ },
+ {
+  "cat": "職長の役割",
+  "q": "「{!送|おく}り{出|だ}し{教育|きょういく}」の{説明|せつめい}として{正|ただ}しいものはどれか。",
+  "o": [
+   "{協力会社|きょうりょくがいしゃ}が、{自社|じしゃ}の{作業員|さぎょういん}を{新|あたら}しい{現場|げんば}に{送|おく}り{出|だ}す{前|まえ}に{行|おこな}う{教育|きょういく}",
+   "{元請|もとうけ}が、{作業員|さぎょういん}が{現場|げんば}に{入|はい}った{日|ひ}に{行|おこな}う{新規入場者教育|しんきにゅうじょうしゃきょういく}",
+   "{職長|しょくちょう}が{毎朝|まいあさ}の{作業前|さぎょうまえ}に{行|おこな}う{打|う}ち{合|あ}わせ",
+   "{工事|こうじ}が{終|お}わった{後|あと}に{行|おこな}う{反省会|はんせいかい}"
+  ],
+  "a": 0,
+  "tl": "Madalas magkapalit ang dalawa. Ang 送り出し教育 ay ginagawa ng sariling kumpanya (協力会社, subcontractor) BAGO ipadala ang worker sa bagong site: safety rules, laman ng trabaho, at mga dapat dalhin. Ang 新規入場者教育 naman ay ginagawa ng 元請 sa site sa unang araw ng pagpasok.",
+  "en": "These two are often confused. Send-out training (送り出し教育) is given by the worker's own company (協力会社, subcontractor) BEFORE sending them to a new site: safety rules, the work content and what to bring. New-entrant training (新規入場者教育) is given by the main contractor on site on the first day.",
+  "g": [
+   [
+    "送り出し教育",
+    "おくりだしきょういく",
+    "send-out training"
+   ],
+   [
+    "協力会社",
+    "きょうりょくがいしゃ",
+    "subcontractor (partner company)"
+   ],
+   [
+    "新規入場者教育",
+    "しんきにゅうじょうしゃきょういく",
+    "new-entrant training"
+   ]
+  ],
+  "tq": {
+   "en": "Which correctly describes \"send-out training\" (okuridashi kyōiku)?",
+   "tl": "Alin ang tamang paliwanag ng \"send-out training\" (okuridashi kyōiku)?"
+  },
+  "to": {
+   "en": [
+    "Training a subcontractor gives its own workers before sending them to a new site",
+    "New-entrant training the main contractor gives on the day workers enter the site",
+    "The meeting the foreman holds every morning before work",
+    "The review meeting held after the work is finished"
+   ],
+   "tl": [
+    "Training ng subcontractor sa sariling worker bago ipadala sa bagong site",
+    "New-entrant training ng main contractor sa araw ng pagpasok sa site",
+    "Meeting ng foreman tuwing umaga bago ang trabaho",
+    "Review meeting pagkatapos ng trabaho"
+   ]
+  },
+  "lv": "real",
+  "part": "gakka",
+  "ref": "職長テキスト 2.2.1"
+ },
+ {
+  "cat": "職長の役割",
+  "q": "{職場|しょくば}のパワーハラスメントにあたらないものはどれか。",
+  "o": [
+   "{業務上|ぎょうむじょう}{必要|ひつよう}かつ{相当|そうとう}な{範囲|はんい}で{行|おこな}う、{適正|てきせい}な{指示|しじ}や{指導|しどう}",
+   "{明|あき}らかに{達成|たっせい}できない{量|りょう}の{仕事|しごと}を{押|お}し{付|つ}ける",
+   "{一人|ひとり}だけを{仕事|しごと}や{会話|かいわ}から{外|はず}す",
+   "{仕事|しごと}と{関係|かんけい}のない{私生活|しせいかつ}にしつこく{立|た}ち{入|い}る"
+  ],
+  "a": 0,
+  "tl": "Ang power harassment ay pananalita o kilos na (1) gumagamit ng mas mataas na posisyon, (2) lampas sa kailangan para sa trabaho, at (3) sumisira sa working environment. Ang tamang utos at pagtuturo na kailangan talaga sa trabaho ay HINDI power harassment. Ang sobrang trabaho, pag-isolate, at pakikialam sa private life ay mga halimbawa nito.",
+  "en": "Power harassment is conduct that (1) relies on a superior position, (2) goes beyond what the work needs, and (3) harms the working environment. Proper instruction and guidance that the work actually needs is NOT power harassment. Impossible workloads, isolating someone and prying into private life are examples of it.",
+  "g": [
+   [
+    "相当",
+    "そうとう",
+    "appropriate, reasonable"
+   ],
+   [
+    "範囲",
+    "はんい",
+    "range, scope"
+   ],
+   [
+    "私生活",
+    "しせいかつ",
+    "private life"
+   ]
+  ],
+  "tq": {
+   "en": "Which is NOT workplace power harassment?",
+   "tl": "Alin ang HINDI power harassment sa trabaho?"
+  },
+  "to": {
+   "en": [
+    "Proper instructions and guidance within what the work actually needs",
+    "Forcing an amount of work that clearly cannot be done",
+    "Leaving one person out of work and conversation",
+    "Repeatedly prying into private life unrelated to work"
+   ],
+   "tl": [
+    "Tamang utos at pagtuturo na kailangan talaga sa trabaho",
+    "Pagpilit ng trabahong hindi talaga kayang tapusin",
+    "Pag-iwan sa isang tao sa trabaho at usapan",
+    "Paulit-ulit na pakikialam sa private life na walang kinalaman sa trabaho"
+   ]
+  },
+  "lv": "real",
+  "part": "gakka",
+  "ref": "職長テキスト 3.7"
+ },
+ {
+  "cat": "品質・工程・原価",
+  "q": "{作業|さぎょう}の{前後関係|ぜんごかんけい}と、{全体|ぜんたい}の{工期|こうき}を{決|き}める{作業|さぎょう}の{流|なが}れ（クリティカルパス）が{分|わ}かりやすい{工程表|こうていひょう}はどれか。",
+  "o": [
+   "{!ネットワーク工程表|ネットワークこうていひょう}",
+   "バーチャート{工程表|こうていひょう}",
+   "ガントチャート{工程表|こうていひょう}",
+   "{出来高累計曲線|できだかるいけいきょくせん}"
+  ],
+  "a": 0,
+  "tl": "Sa ネットワーク工程表 (network schedule), makikita kung aling trabaho ang kailangang matapos bago ang iba, at ang critical path: ang sunod-sunod na trabaho na kapag na-delay ay made-delay ang buong project. Ang バーチャート ay madaling basahin ang start at end ng bawat trabaho, pero hindi malinaw ang koneksyon ng mga trabaho.",
+  "en": "A network schedule (ネットワーク工程表) shows which tasks must finish before others and the critical path: the chain of tasks where any delay delays the whole project. A bar chart (バーチャート) shows each task's start and end clearly but not how tasks depend on each other.",
+  "g": [
+   [
+    "ネットワーク工程表",
+    "ネットワークこうていひょう",
+    "network schedule"
+   ],
+   [
+    "前後関係",
+    "ぜんごかんけい",
+    "order relationship between tasks"
+   ],
+   [
+    "クリティカルパス",
+    "クリティカルパス",
+    "critical path"
+   ]
+  ],
+  "tq": {
+   "en": "Which schedule chart clearly shows the order between tasks and the chain of tasks that decides the total period (critical path)?",
+   "tl": "Aling schedule chart ang malinaw na nagpapakita ng pagkakasunod ng mga trabaho at ng critical path?"
+  },
+  "to": {
+   "en": [
+    "Network schedule",
+    "Bar chart schedule",
+    "Gantt chart schedule",
+    "Cumulative progress curve (S-curve)"
+   ],
+   "tl": [
+    "Network schedule",
+    "Bar chart schedule",
+    "Gantt chart schedule",
+    "Cumulative progress curve (S-curve)"
+   ]
+  },
+  "lv": "real",
+  "part": "gakka",
+  "ref": "職長テキスト 2.5"
+ },
+ {
+  "cat": "品質・工程・原価",
+  "q": "{不良|ふりょう}の{項目|こうもく}を{件数|けんすう}の{多|おお}い{順|じゅん}に{棒|ぼう}グラフで{並|なら}べ、{累積比率|るいせきひりつ}を{折|お}れ{線|せん}で{重|かさ}ねた{図|ず}を{何|なん}というか。",
+  "o": [
+   "{!パレート図|パレートず}",
+   "{特性要因図|とくせいよういんず}",
+   "ヒストグラム",
+   "{管理図|かんりず}"
+  ],
+  "a": 0,
+  "tl": "Ang パレート図 (Pareto chart) ay bar graph ng mga depekto mula pinakamarami, kasama ang line ng cumulative percentage. Makikita agad kung aling problema ang unahin. Ang 特性要因図 (fishbone diagram) naman ay nagpapakita ng mga dahilan ng isang problema.",
+  "en": "A Pareto chart (パレート図) lists defect items as bars from most to least frequent, with a cumulative percentage line. It shows which problem to tackle first. A fishbone diagram (特性要因図) shows the causes of one problem.",
+  "g": [
+   [
+    "パレート図",
+    "パレートず",
+    "Pareto chart"
+   ],
+   [
+    "特性要因図",
+    "とくせいよういんず",
+    "fishbone (cause-and-effect) diagram"
+   ],
+   [
+    "累積",
+    "るいせき",
+    "cumulative"
+   ]
+  ],
+  "tq": {
+   "en": "What is the chart that lists defect items as bars in order of frequency and overlays a cumulative percentage line?",
+   "tl": "Ano ang chart na nag-aayos ng mga depekto bilang bar mula pinakamarami, na may line ng cumulative percentage?"
+  },
+  "to": {
+   "en": [
+    "Pareto chart",
+    "Fishbone (cause-and-effect) diagram",
+    "Histogram",
+    "Control chart"
+   ],
+   "tl": [
+    "Pareto chart",
+    "Fishbone (cause-and-effect) diagram",
+    "Histogram",
+    "Control chart"
+   ]
+  },
+  "lv": "real",
+  "part": "gakka",
+  "ref": "職長テキスト 2.7"
+ },
+ {
+  "cat": "環境",
+  "q": "{産業廃棄物|さんぎょうはいきぶつ}の{処理|しょり}を{業者|ぎょうしゃ}に{委託|いたく}するとき、{運搬|うんぱん}や{処分|しょぶん}が{正|ただ}しく{行|おこな}われたかを{確認|かくにん}するための{書類|しょるい}はどれか。",
+  "o": [
+   "マニフェスト（{産業廃棄物管理票|さんぎょうはいきぶつかんりひょう}）",
+   "{作業日報|さぎょうにっぽう}",
+   "{施工図|せこうず}",
+   "{工程表|こうていひょう}"
+  ],
+  "a": 0,
+  "tl": "Kapag ipinasa sa contractor ang pagtatapon ng industrial waste (産業廃棄物), gumagamit ng マニフェスト (waste manifest) para masubaybayan na tama ang paghakot at pagtatapon. Itinakda ito ng batas sa waste management.",
+  "en": "When industrial waste (産業廃棄物) disposal is entrusted to a contractor, a waste manifest (マニフェスト) is used to track that it is transported and disposed of properly. This is required by the waste management law.",
+  "g": [
+   [
+    "産業廃棄物",
+    "さんぎょうはいきぶつ",
+    "industrial waste"
+   ],
+   [
+    "委託",
+    "いたく",
+    "entrust, outsource"
+   ],
+   [
+    "マニフェスト",
+    "マニフェスト",
+    "waste manifest"
+   ]
+  ],
+  "tq": {
+   "en": "When entrusting industrial waste to a contractor, which document confirms it was transported and disposed of properly?",
+   "tl": "Kapag ipinasa sa contractor ang industrial waste, aling dokumento ang nagkukumpirma na tama ang paghakot at pagtatapon?"
+  },
+  "to": {
+   "en": [
+    "Manifest (industrial waste control slip)",
+    "Daily work report",
+    "Shop drawing",
+    "Schedule chart"
+   ],
+   "tl": [
+    "Manifest (industrial waste control slip)",
+    "Daily work report",
+    "Shop drawing",
+    "Schedule chart"
+   ]
+  },
+  "lv": "real",
+  "part": "gakka",
+  "ref": "職長テキスト 2.8"
+ },
+ {
+  "cat": "図面・建設業",
+  "q": "{発注者|はっちゅうしゃ}から{直接|ちょくせつ}{請|う}け{負|お}った{工事|こうじ}で、{下請|したうけ}に{出|だ}す{金額|きんがく}が{一定|いってい}{額|がく}{以上|いじょう}になる{場合|ばあい}に{必要|ひつよう}な{許可|きょか}はどれか。",
+  "o": [
+   "{!特定建設業|とくていけんせつぎょう}の{許可|きょか}",
+   "{一般建設業|いっぱんけんせつぎょう}の{許可|きょか}",
+   "{宅地建物取引業|たくちたてものとりひきぎょう}の{免許|めんきょ}",
+   "{産業廃棄物収集運搬業|さんぎょうはいきぶつしゅうしゅううんぱんぎょう}の{許可|きょか}"
+  ],
+  "a": 0,
+  "tl": "May dalawang uri ng construction business permit: 一般建設業 at 特定建設業. Kapag main contractor ka (direkta sa client) at malaki ang halaga ng trabahong ibinibigay mo sa subcontractor, kailangan ang 特定建設業 permit, na mas mahigpit ang requirements.",
+  "en": "There are two kinds of construction business permits: general (一般建設業) and special (特定建設業). A main contractor taking work directly from the client and subcontracting a large amount needs the special permit, which has stricter requirements.",
+  "g": [
+   [
+    "特定建設業",
+    "とくていけんせつぎょう",
+    "special construction business (permit)"
+   ],
+   [
+    "一般建設業",
+    "いっぱんけんせつぎょう",
+    "general construction business (permit)"
+   ],
+   [
+    "許可",
+    "きょか",
+    "permit"
+   ]
+  ],
+  "tq": {
+   "en": "For work taken directly from the client, which permit is needed when the amount subcontracted reaches a certain level?",
+   "tl": "Sa trabahong direktang kinuha sa client, aling permit ang kailangan kapag umabot sa tiyak na halaga ang ibinibigay sa subcontractor?"
+  },
+  "to": {
+   "en": [
+    "Special construction business permit",
+    "General construction business permit",
+    "Real estate brokerage license",
+    "Industrial waste collection and transport permit"
+   ],
+   "tl": [
+    "Special construction business permit",
+    "General construction business permit",
+    "Real estate brokerage license",
+    "Industrial waste collection and transport permit"
+   ]
+  },
+  "lv": "real",
+  "part": "gakka",
+  "ref": "職長テキスト 5.3"
+ },
+ {
+  "cat": "図面・建設業",
+  "q": "{工事|こうじ}に{関|かか}わる{下請|したうけ}{会社|がいしゃ}の{関係|かんけい}を{図|ず}で{示|しめ}し、{現場|げんば}の{見|み}やすい{所|ところ}に{掲示|けいじ}するものはどれか。",
+  "o": [
+   "{!施工体系図|せこうたいけいず}",
+   "{工程表|こうていひょう}",
+   "{施工図|せこうず}",
+   "{作業手順書|さぎょうてじゅんしょ}"
+  ],
+  "a": 0,
+  "tl": "Ang 施工体系図 (construction organization chart) ay nagpapakita kung paano magkakaugnay ang main contractor at lahat ng subcontractor sa trabaho, at idinidikit ito sa site kung saan madaling makita. Ang 工程表 ay schedule, at ang 施工図 ay shop drawing.",
+  "en": "The construction organization chart (施工体系図) shows how the main contractor and all subcontractors on the job are related, and it is posted where it is easy to see on site. A 工程表 is a schedule and a 施工図 is a shop drawing.",
+  "g": [
+   [
+    "施工体系図",
+    "せこうたいけいず",
+    "construction organization chart"
+   ],
+   [
+    "掲示",
+    "けいじ",
+    "post, display"
+   ]
+  ],
+  "tq": {
+   "en": "What shows the relationships of the subcontractors involved in the work as a chart and is posted where it is easy to see on site?",
+   "tl": "Ano ang nagpapakita ng relasyon ng mga subcontractor sa trabaho bilang chart at idinidikit sa site?"
+  },
+  "to": {
+   "en": [
+    "Construction organization chart (sekō taikeizu)",
+    "Schedule chart",
+    "Shop drawing",
+    "Work procedure document"
+   ],
+   "tl": [
+    "Construction organization chart (sekō taikeizu)",
+    "Schedule chart",
+    "Shop drawing",
+    "Work procedure document"
+   ]
+  },
+  "lv": "real",
+  "part": "gakka",
+  "ref": "職長テキスト 5.3"
+ },
+ {
+  "cat": "図面・建設業",
+  "q": "{工事|こうじ}をどのような{方法|ほうほう}・{手順|てじゅん}・{体制|たいせい}で{進|すす}めるかをまとめ、{主|おも}に{元請|もとうけ}が{作成|さくせい}する{書類|しょるい}はどれか。",
+  "o": [
+   "{!施工計画書|せこうけいかくしょ}",
+   "{施工図|せこうず}",
+   "{設計図|せっけいず}",
+   "{作業日報|さぎょうにっぽう}"
+  ],
+  "a": 0,
+  "tl": "Ang 施工計画書 (construction plan) ay ginagawa ng main contractor at nakasulat dito kung paano gagawin ang trabaho: method, pagkakasunod, organisasyon, schedule, quality control, at safety. Mula dito ginagawa ng foreman ang 作業手順書.",
+  "en": "The construction plan (施工計画書) is made mainly by the main contractor and describes how the work will be done: methods, sequence, organization, schedule, quality control and safety. The foreman makes the work procedure document from it.",
+  "g": [
+   [
+    "施工計画書",
+    "せこうけいかくしょ",
+    "construction plan"
+   ],
+   [
+    "体制",
+    "たいせい",
+    "organization, setup"
+   ]
+  ],
+  "tq": {
+   "en": "Which document, made mainly by the main contractor, sets out the methods, sequence and organization for carrying out the work?",
+   "tl": "Aling dokumento, na karaniwang gawa ng main contractor, ang naglalaman ng method, pagkakasunod, at organisasyon ng trabaho?"
+  },
+  "to": {
+   "en": [
+    "Construction plan (sekō keikakusho)",
+    "Shop drawing",
+    "Design drawing",
+    "Daily work report"
+   ],
+   "tl": [
+    "Construction plan (sekō keikakusho)",
+    "Shop drawing",
+    "Design drawing",
+    "Daily work report"
+   ]
+  },
+  "lv": "real",
+  "part": "gakka",
+  "ref": "職長テキスト 4.1.2"
+ },
+ {
+  "cat": "図面・建設業",
+  "q": "{建設|けんせつ}キャリアアップシステム（CCUS）の{説明|せつめい}として{正|ただ}しいものはどれか。",
+  "o": [
+   "{技能者|ぎのうしゃ}の{資格|しかく}や{現場|げんば}での{就業履歴|しゅうぎょうりれき}を{登録|とうろく}し、{技能|ぎのう}や{経験|けいけん}に{応|おう}じた{処遇|しょぐう}につなげる",
+   "{外国人|がいこくじん}の{在留資格|ざいりゅうしかく}を{審査|しんさ}する{入管|にゅうかん}のシステム",
+   "{工事代金|こうじだいきん}の{支払|しはら}いを{管理|かんり}する{銀行|ぎんこう}のシステム",
+   "{建設機械|けんせつきかい}の{位置|いち}をGPSで{管理|かんり}するシステム"
+  ],
+  "a": 0,
+  "tl": "Sa CCUS (Construction Career Up System), nire-record ang license (資格) at work history ng bawat skilled worker sa bawat site gamit ang card. Ang layunin ay mabigyan ng tamang sahod at posisyon ayon sa skill at experience. Para sa construction SSW, magagamit ito bilang patunay ng experience mo.",
+  "en": "CCUS (Construction Career Up System) records each skilled worker's licenses (資格) and site work history with a card. The aim is pay and position that match skill and experience. For construction SSW workers it can serve as a record of your experience.",
+  "g": [
+   [
+    "就業履歴",
+    "しゅうぎょうりれき",
+    "work history"
+   ],
+   [
+    "処遇",
+    "しょぐう",
+    "treatment (pay, position)"
+   ],
+   [
+    "技能者",
+    "ぎのうしゃ",
+    "skilled worker"
+   ]
+  ],
+  "tq": {
+   "en": "Which correctly describes the Construction Career Up System (CCUS)?",
+   "tl": "Alin ang tamang paliwanag ng Construction Career Up System (CCUS)?"
+  },
+  "to": {
+   "en": [
+    "It registers workers' licenses and site work history, leading to pay and treatment that match their skills and experience",
+    "An immigration system that screens foreigners' visa status",
+    "A bank system that manages payment of construction fees",
+    "A system that tracks construction machines by GPS"
+   ],
+   "tl": [
+    "Nire-record ang license at work history ng worker para sa sahod at posisyon na bagay sa skill at experience",
+    "Sistema ng immigration na nagche-check ng visa status",
+    "Sistema ng bangko para sa bayad sa construction",
+    "Sistema na sumusubaybay sa makina gamit ang GPS"
+   ]
+  },
+  "lv": "real",
+  "part": "gakka",
+  "ref": "職長テキスト 5.2"
+ },
+ {
+  "cat": "安全衛生",
+  "q": "{労働安全衛生規則|ろうどうあんぜんえいせいきそく}で、{足場|あしば}の{作業床|さぎょうしょう}の{端|はし}などに{設|もう}ける{手|て}すりの{高|たか}さはどれか。",
+  "o": [
+   "85cm{以上|いじょう}",
+   "60cm{以上|いじょう}",
+   "70cm{以上|いじょう}",
+   "120cm{以上|いじょう}"
+  ],
+  "a": 0,
+  "tl": "Ayon sa 労働安全衛生規則, ang handrail (手すり) sa gilid ng working platform ng scaffold ay dapat 85cm pataas ang taas, at kailangan din ng 中さん (mid rail) sa pagitan para hindi makalusot ang tao.",
+  "en": "Under the Industrial Safety and Health Regulations, handrails (手すり) at the edge of scaffold working platforms must be 85 cm or higher, with a mid rail (中さん) in between so no one slips through.",
+  "g": [
+   [
+    "手すり",
+    "てすり",
+    "handrail"
+   ],
+   [
+    "足場",
+    "あしば",
+    "scaffold"
+   ],
+   [
+    "中さん",
+    "なかさん",
+    "mid rail"
+   ]
+  ],
+  "tq": {
+   "en": "Under the Industrial Safety and Health Regulations, how high must handrails be at the edge of scaffold working platforms?",
+   "tl": "Ayon sa Industrial Safety and Health Regulations, gaano kataas ang handrail sa gilid ng working platform ng scaffold?"
+  },
+  "to": {
+   "en": [
+    "85 cm or more",
+    "60 cm or more",
+    "70 cm or more",
+    "120 cm or more"
+   ],
+   "tl": [
+    "85 cm pataas",
+    "60 cm pataas",
+    "70 cm pataas",
+    "120 cm pataas"
+   ]
+  },
+  "lv": "real",
+  "part": "gakka",
+  "ref": "職長テキスト 2.4"
  }
 ];

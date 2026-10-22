@@ -110,6 +110,7 @@ ruby rt{font-size:.5em;font-weight:500;color:var(--muted)}
 .badge.pass{background:var(--accent-soft);color:var(--accent)}
 .badge.fail{background:var(--bad-soft);color:var(--bad)}
 .chips{display:flex;gap:6px;flex-wrap:wrap}
+.ref{font-size:.85em;opacity:.75;margin:.4em 0 0}
 .chip.real{border-color:var(--accent);color:var(--accent);font-weight:700}
 .kubun{display:flex;flex-wrap:wrap;gap:8px}
 .kubun .btn{padding:8px 14px}
@@ -277,7 +278,7 @@ function render(){
   } else if(answered){
     const ok=S.picked===q.a;
     const v = S.lang==="tl" ? (ok?"Tama! 正解":"Mali. 不正解") : (ok?"Correct! 正解":"Not quite. 不正解");
-    foot=`<div class="explain"><div class="verdict ${ok?"ok":"ng"}">${v}</div><p>${q[S.lang]}</p>
+    foot=`<div class="explain"><div class="verdict ${ok?"ok":"ng"}">${v}</div><p>${q[S.lang]}</p>${q.ref?`<p class="ref">📘 関連: ${q.ref}（JAC公式テキスト）</p>`:""}
       <div class="gloss">${q.g.map(([w,r,e])=>`<span><b>${w}</b> <em>${r}</em> · ${e}</span>`).join("")}</div>
       <div class="row"><button type="button" class="btn" id="next">${S.i===S.set.length-1?"結果を見る":"次の問題"}</button></div></div>`;
   }
